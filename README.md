@@ -1,10 +1,9 @@
-<h1 align="center">BeeStation 13 Modded Codebase</h1>
+<h1 align="center">BeeStation 13 Modded Codebase - Echo 13</h1>
 
 
 [![forthebadge](https://forthebadge.com/images/badges/contains-technical-debt.svg)](https://user-images.githubusercontent.com/8171642/50290880-ffef5500-043a-11e9-8270-a2e5b697c86c.png)
 
-**Website:** http://beestation13.com
-**Code:** https://github.com/beestation/beestation-hornet
+**Beestation Website:** http://beestation13.com
 **Wiki:** https://wiki.beestation13.com/view/Main_Page
 
 
