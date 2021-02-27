@@ -1,7 +1,7 @@
 ## HEALTH ###
 
 ##Damage multiplier, effects both weapons and healing on all mobs. For example, 1.25 would result in 25% higher damage.
-DAMAGE_MULTIPLIER 1
+DAMAGE_MULTIPLIER 1.25
 
 ## REVIVAL ###
 
@@ -59,10 +59,10 @@ HUMANS_NEED_SURNAMES
 #FORCE_RANDOM_NAMES
 
 ## Unhash this to turn on automatic reopening of a player's job if they suicide at roundstart
-#REOPEN_ROUNDSTART_SUICIDE_ROLES
+REOPEN_ROUNDSTART_SUICIDE_ROLES
 
 ## Unhash to enable reopening of command level positions
-#REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
+REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
 
 ## Define the delay for roles to be reopened after the round starts in seconds.
 ## Has a minimum delay of 30 seconds, though it's suggested to keep over 1 min
@@ -89,35 +89,33 @@ ALERT_DELTA Destruction of the station is imminent. All crew are instructed to o
 MASTER_MODE secret
 
 ## Uncomment to not send a roundstart intercept report. Gamemodes may override this.
-#NO_INTERCEPT_REPORT
+NO_INTERCEPT_REPORT
 
 ## Probablities for game modes chosen in 'secret' and 'random' modes.
 ## Default probablity is 1, increase to make that mode more likely to be picked.
 ## Set to 0 to disable that mode.
 
-PROBABILITY TRAITOR 9
-PROBABILITY CULT 6
-PROBABILITY DYNAMIC 6
-PROBABILITY HERESY 6
-PROBABILITY NUCLEAR 6
-PROBABILITY TRAITORCHAN 5
-PROBABILITY CHANGELING 5
-PROBABILITY INCURSION 4
-PROBABILITY REVOLUTION 4
-PROBABILITY INTERNAL_AFFAIRS 3
-PROBABILITY TRAITORBRO 3
-PROBABILITY WIZARD 2
-PROBABILITY CLOWNOPS 2
+PROBABILITY TRAITOR 4
+PROBABILITY CULT 1
+PROBABILITY DYNAMIC 0
+PROBABILITY HERESY 0
+PROBABILITY NUCLEAR 1
+PROBABILITY TRAITORCHAN 1
+PROBABILITY CHANGELING 1
+PROBABILITY INCURSION 1
+PROBABILITY REVOLUTION 0
+PROBABILITY INTERNAL_AFFAIRS 1
+PROBABILITY TRAITORBRO 1
+PROBABILITY WIZARD 0
+PROBABILITY CLOWNOPS 0
 PROBABILITY CLOCKCULT 1
 PROBABILITY MONKEY 0
 PROBABILITY GANG 0
 PROBABILITY METEOR 0
-PROBABILITY SECRET_EXTENDED 0
+PROBABILITY EXTENDED 0
+PROBABILITY SECRET_EXTENDED 9
 PROBABILITY DEVIL 0
 PROBABILITY DEVIL_AGENTS 0
-
-## Creates issues when NO_INTERCEPT_REPORT is enabled
-PROBABILITY EXTENDED 0 
 
 ## You probably want to keep sandbox off by default for secret and random.
 PROBABILITY SANDBOX 0
@@ -176,7 +174,7 @@ MIDROUND_ANTAG WIZARD
 ## Notes: For maximum number of players a value of -1 means no maximum. Setting minimums to
 ## VERY low numbers (< 5) can lead to errors if the roundtypes were not designed for that.
 
-#MIN_POP TRAITOR 0
+MIN_POP TRAITOR 5
 #MAX_POP TRAITOR -1
 
 #MIN_POP TRAITORBRO 0
@@ -294,7 +292,7 @@ EQUAL_JOB_WEIGHT
 DEFAULT_REP_VALUE 5
 
 ## Uncomment to allow players to see the set odds of different rounds in secret/random in the get server revision screen. This will NOT tell the current roundtype.
-#SHOW_GAME_TYPE_ODDS
+SHOW_GAME_TYPE_ODDS
 
 ## Uncomment to enable dynamic ruleset config file.
 DYNAMIC_CONFIG_ENABLED
@@ -331,7 +329,7 @@ ALLOW_AI_MULTICAM
 ## AWAY MISSIONS ###
 
 ## Uncomment to load one of the missions from awaymissionconfig.txt at roundstart.
-#ROUNDSTART_AWAY
+ROUNDSTART_AWAY
 
 ## How long the delay is before the Away Mission gate opens. Default is half an hour.
 ## 600 is one minute.
@@ -352,7 +350,7 @@ MINIMAL_ACCESS_THRESHOLD 20
 #JOBS_HAVE_MINIMAL_ACCESS
 
 ## Uncomment to give assistants maint access.
-ASSISTANTS_HAVE_MAINT_ACCESS
+#ASSISTANTS_HAVE_MAINT_ACCESS
 
 ## Uncoment to give security maint access. Note that if you dectivate JOBS_HAVE_MINIMAL_ACCESS security already gets maint from that.
 SECURITY_HAS_MAINT_ACCESS
@@ -470,18 +468,18 @@ ROUNDSTART_RACES human
 
 ## Races that are strictly worse than humans that could probably be turned on without balance concerns
 ROUNDSTART_RACES lizard
-ROUNDSTART_RACES fly
+#ROUNDSTART_RACES fly
 ROUNDSTART_RACES moth
 ROUNDSTART_RACES plasmaman
 ROUNDSTART_RACES felinid
-ROUNDSTART_RACES squid
+#ROUNDSTART_RACES squid
 #ROUNDSTART_RACES shadow
 ROUNDSTART_RACES ipc
 
 ## Races that are better than humans in some ways, but worse in others
 ROUNDSTART_RACES ethereal
 ROUNDSTART_RACES apid
-ROUNDSTART_RACES oozeling
+#ROUNDSTART_RACES oozeling
 #ROUNDSTART_RACES jelly
 #ROUNDSTART_RACES iron_golem
 #ROUNDSTART_RACES adamantine_golem
@@ -497,7 +495,7 @@ ROUNDSTART_RACES oozeling
 #ROUNDSTART_RACES skeleton
 #ROUNDSTART_RACES zombie
 #ROUNDSTART_RACES slime
-#ROUNDSTART_RACES pod
+ROUNDSTART_RACES pod
 #ROUNDSTART_RACES military_synth
 #ROUNDSTART_RACES agent
 
@@ -523,7 +521,7 @@ OVERFLOW_CAP -1
 #STARLIGHT
 
 ## Uncomment to bring back old grey suit assistants instead of the now default rainbow colored assistants.
-#GREY_ASSISTANTS
+GREY_ASSISTANTS
 
 ## Midround Antag (aka Mulligan antag) config options ###
 
@@ -565,21 +563,21 @@ BOMBCAP 24
 LAVALAND_BUDGET 60
 
 ## Space Ruin Budged
-Space_Budget 8
+Space_Budget 15
 
 ## Time in ds from when a player latejoins till the arrival shuttle docks at the station
 ## Must be at least 30. At least 55 recommended to be visually/aurally appropriate
-ARRIVALS_SHUTTLE_DOCK_WINDOW 55
+ARRIVALS_SHUTTLE_DOCK_WINDOW 130
 
 ## Uncomment to require the arrivals shuttle to be in flight (if it can fly) before late join players can join
-#ARRIVALS_SHUTTLE_REQUIRE_UNDOCKED
+ARRIVALS_SHUTTLE_REQUIRE_UNDOCKED
 
 ## Uncomment to prevent late join players from spawning if the arrivals shuttle is depressurized
-#ARRIVALS_SHUTTLE_REQUIRE_SAFE_LATEJOIN
+ARRIVALS_SHUTTLE_REQUIRE_SAFE_LATEJOIN
 
 ## How many wirechewing rodents you want to spawn on exposed maintenane wires at the start of the round. You may wish to set this to 0 if you're testing powernets.
 
-MICE_ROUNDSTART 10
+MICE_ROUNDSTART 7
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
 #EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
@@ -601,28 +599,24 @@ ROUNDSTART_TRAITS
 #RANDOMIZE_SHIFT_TIME
 
 ## Sets shift time to server time at roundstart. Overridden by RANDOMIZE_SHIFT_TIME ##
-#SHIFT_TIME_REALTIME
+SHIFT_TIME_REALTIME
 
 ## Maximum fine for a citation
-MAXFINE 2000
+MAXFINE 5000
 
 ## Enable the capitalist agenda on your server.
 ECONOMY
 
 ## Crew objectives
-ALLOW_CREW_OBJECTIVES
+#ALLOW_CREW_OBJECTIVES
 
 ## Mob spam prevention. The number of each mobtype that can be alive at once. Stops people from crashing the server with chickens/monkeycubes/slimes. Altering these values is recommended based on server hardware.
 MAX_CUBE_MONKEYS 150
 MAX_CHICKENS 100
 MAX_SLIMES 100
 
-## Max amount of bodies allowed to slimepeople. Has balance considerations as well as technical ones.
-MAX_SLIMEPERSON_BODIES 10
-
-
 ## Uncomment to restrict suiciding. Adds an additional confirmation dialogue, additional logging, and prevents suicide within the first 15 minutes of the round.
-#RESTRICTED_SUICIDE
+RESTRICTED_SUICIDE
 
 
 ## Bluespace Miners.
@@ -631,4 +625,4 @@ MAX_SLIMEPERSON_BODIES 10
 ROUNDSTART_BLUESPACE_MINERS 2
 
 ## Enable the bluespace miner research node?
-#BSMINER_RESEARCHABLE
+BSMINER_RESEARCHABLE
