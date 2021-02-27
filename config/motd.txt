@@ -1,4 +1,4 @@
 <h1 style="color: DarkMagenta;">Welcome to <span class="hypnophrase">Project Echo Thirteen!</span></h1>
-<br><b>Echo13 Discord:          <a href="https://discord.gg/56rs7JW5Qd">Click Me!</a></b>
+<br><b>Echo13 Discord:          <a href="https://discord.gg/H8ajubkb6f">Click Me!</a></b>
 
 <br><b>Donate to our upstream:	<a href="https://www.patreon.com/user?u=10639001">Click Me!</a></b>
