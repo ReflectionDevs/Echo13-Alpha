@@ -34,9 +34,6 @@ All assets including icons and sound are under a [Creative Commons 3.0 BY-SA lic
 byond-extools.dll is licensed under MIT. See MIT.txt for more details.
 
 # Other Codebase Credits
-- /tg/, for the codebase.
-- CEV Eris, for the PDA sprites
-- TGMC, for the custom keybinds base
-- Citadel, for their beautiful lighting
+- Beestation, for the codebase.
 
 Also thanks to 15.ai and https://freesound.org/.
