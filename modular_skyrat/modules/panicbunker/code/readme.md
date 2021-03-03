@@ -25,5 +25,5 @@ Adds a system that uses a JSON file to enable bunker bypassing. This is a very m
 - NA
 
 ### Credits
-Gandalf2k15 - Porting to Skyrat
-Vexylius - Porting to Echo 13
+- Gandalf2k15 - Porting to Skyrat
+- Vexylius - Porting to Echo 13 from Skyrat
