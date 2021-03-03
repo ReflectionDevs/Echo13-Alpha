@@ -3203,4 +3203,5 @@
 #include "interface\interface.dm"
 #include "interface\stylesheet.dm"
 #include "interface\skin.dmf"
+#include "modular_skyrat\modules\panicbunker\code\panicbunker.dm"
 // END_INCLUDE
