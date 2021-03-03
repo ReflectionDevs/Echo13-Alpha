@@ -1,12 +1,12 @@
 /datum/job/brig_phys
 	title = "Brig Physician"
 	flag = BRIG_PHYS
-	department_head = list("Chief Medical Officer")
+	department_head = list("Head of Security", "Chief Medical Officer")
 	department_flag = ENGSEC
 	faction = "Station"
 	total_positions = 1
 	spawn_positions = 1
-	supervisors = "chief medical officer"
+	supervisors = "the head of security and chief medical officer"
 	selection_color = "#ffeeee"
 	chat_color = "#b16789"
 	minimal_player_age = 7
@@ -16,9 +16,9 @@
 
 	outfit = /datum/outfit/job/brig_phys
 
-	access = list(ACCESS_SEC_DOORS, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_MEDICAL, ACCESS_BRIGPHYS)
-	minimal_access = list(ACCESS_SEC_DOORS, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_MEDICAL, ACCESS_BRIGPHYS)
-	paycheck = PAYCHECK_MEDIUM
+	access = list(ACCESS_SEC_DOORS, ACCESS_SECURITY, ACCESS_BRIG, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_KEYCARD_AUTH, ACCESS_MEDICAL, ACCESS_FORENSICS_LOCKERS, ACCESS_BRIGPHYS)
+	minimal_access = list(ACCESS_SEC_DOORS, ACCESS_SECURITY, ACCESS_BRIG, ACCESS_COURT, ACCESS_MAINT_TUNNELS, ACCESS_MORGUE, ACCESS_MEDICAL, ACCESS_KEYCARD_AUTH, ACCESS_FORENSICS_LOCKERS, ACCESS_BRIGPHYS)
+	paycheck = PAYCHECK_HARD
 	paycheck_department = ACCOUNT_MED
 
 	display_order = JOB_DISPLAY_ORDER_BRIG_PHYS
@@ -36,6 +36,7 @@
 	suit_store = /obj/item/flashlight/seclite
 	l_hand = /obj/item/storage/firstaid/medical
 	head = /obj/item/clothing/head/soft/sec/brig_phys
+	implants = list(/obj/item/implant/mindshield)
 
 	backpack = /obj/item/storage/backpack/medic
 	satchel = /obj/item/storage/backpack/satchel/med
