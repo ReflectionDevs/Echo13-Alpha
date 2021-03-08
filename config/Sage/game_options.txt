@@ -1,7 +1,7 @@
 ## HEALTH ###
 
 ##Damage multiplier, effects both weapons and healing on all mobs. For example, 1.25 would result in 25% higher damage.
-DAMAGE_MULTIPLIER 1.25
+DAMAGE_MULTIPLIER 1
 
 ## REVIVAL ###
 
@@ -16,7 +16,7 @@ REVIVAL_BRAIN_LIFE -1
 
 ## OOC DURING ROUND ###
 ## Comment this out if you want OOC to be automatically disabled during the round, it will be enabled during the lobby and after the round end results.
-OOC_DURING_ROUND
+#OOC_DURING_ROUND
 
 ## LOOC
 ## Comment this out to disable LOOC
@@ -59,10 +59,10 @@ HUMANS_NEED_SURNAMES
 #FORCE_RANDOM_NAMES
 
 ## Unhash this to turn on automatic reopening of a player's job if they suicide at roundstart
-REOPEN_ROUNDSTART_SUICIDE_ROLES
+#REOPEN_ROUNDSTART_SUICIDE_ROLES
 
 ## Unhash to enable reopening of command level positions
-REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
+#REOPEN_ROUNDSTART_SUICIDE_ROLES_COMMAND_POSITIONS
 
 ## Define the delay for roles to be reopened after the round starts in seconds.
 ## Has a minimum delay of 30 seconds, though it's suggested to keep over 1 min
@@ -95,43 +95,29 @@ NO_INTERCEPT_REPORT
 ## Default probablity is 1, increase to make that mode more likely to be picked.
 ## Set to 0 to disable that mode.
 
-<<<<<<< HEAD
-PROBABILITY TRAITOR 4
-PROBABILITY CULT 1
-PROBABILITY DYNAMIC 0
-PROBABILITY HERESY 0
-PROBABILITY NUCLEAR 1
-PROBABILITY TRAITORCHAN 1
-PROBABILITY CHANGELING 1
-PROBABILITY INCURSION 1
-PROBABILITY REVOLUTION 0
-PROBABILITY INTERNAL_AFFAIRS 1
-PROBABILITY TRAITORBRO 1
-PROBABILITY WIZARD 0
-PROBABILITY CLOWNOPS 0
-=======
 PROBABILITY DYNAMIC 9
 PROBABILITY TRAITOR 8
+PROBABILITY SECRET_EXTENDED 7
 PROBABILITY CULT 6
 PROBABILITY HERESY 6
-PROBABILITY NUCLEAR 6
+PROBABILITY INTERNAL_AFFAIRS 6
 PROBABILITY TRAITORCHAN 5
 PROBABILITY CHANGELING 5
-PROBABILITY INCURSION 4
 PROBABILITY REVOLUTION 4
-PROBABILITY INTERNAL_AFFAIRS 3
+PROBABILITY INCURSION 4
+PROBABILITY NUCLEAR 4
 PROBABILITY TRAITORBRO 3
-PROBABILITY WIZARD 2
-PROBABILITY CLOWNOPS 2
->>>>>>> d898aa7889 (Attempts to bring Dynamic more up to date (#3797))
+PROBABILITY WIZARD 1
 PROBABILITY CLOCKCULT 1
 PROBABILITY MONKEY 0
 PROBABILITY GANG 0
+PROBABILITY CLOWNOPS 0
 PROBABILITY METEOR 0
-PROBABILITY EXTENDED 0
-PROBABILITY SECRET_EXTENDED 9
 PROBABILITY DEVIL 0
 PROBABILITY DEVIL_AGENTS 0
+
+## Creates issues when NO_INTERCEPT_REPORT is enabled
+PROBABILITY EXTENDED 0 
 
 ## You probably want to keep sandbox off by default for secret and random.
 PROBABILITY SANDBOX 0
@@ -173,7 +159,7 @@ CONTINUOUS SECRET_EXTENDED
 ## In modes that are continuous, if all antagonists should die then a new set of antagonists will be created.
 
 MIDROUND_ANTAG TRAITOR
-#MIDROUND_ANTAG INCURSION
+MIDROUND_ANTAG INCURSION
 #MIDROUND_ANTAG TRAITORBRO
 MIDROUND_ANTAG TRAITORCHAN
 MIDROUND_ANTAG INTERNAL_AFFAIRS
@@ -190,44 +176,44 @@ MIDROUND_ANTAG WIZARD
 ## Notes: For maximum number of players a value of -1 means no maximum. Setting minimums to
 ## VERY low numbers (< 5) can lead to errors if the roundtypes were not designed for that.
 
-MIN_POP TRAITOR 5
-#MAX_POP TRAITOR -1
+MIN_POP TRAITOR 0
+MAX_POP TRAITOR -1
 
-#MIN_POP TRAITORBRO 0
-#MAX_POP TRAITORBRO -1
+MIN_POP TRAITORBRO 10
+MAX_POP TRAITORBRO -1
 
-#MIN_POP TRAITORCHAN 15
-#MAX_POP TRAITORCHAN -1
+MIN_POP TRAITORCHAN 15
+MAX_POP TRAITORCHAN -1
 
-#MIN_POP DOUBLE_AGENTS 25
-#MAX_POP DOUBLE_AGENTS -1
+MIN_POP DOUBLE_AGENTS 25
+MAX_POP DOUBLE_AGENTS -1
 
-#MIN_POP NUCLEAR 0
-#MAX_POP NUCLEAR -1
+MIN_POP NUCLEAR 0
+MAX_POP NUCLEAR -1
 
-#MIN_POP REVOLUTION 20
-#MAX_POP REVOLUTION -1
+MIN_POP REVOLUTION 20
+MAX_POP REVOLUTION -1
 
-#MIN_POP CULT 24
-#MAX_POP CULT -1
+MIN_POP CULT 24
+MAX_POP CULT -1
 
-#MIN_POP CHANGELING 15
-#MAX_POP CHANGELING -1
+MIN_POP CHANGELING 15
+MAX_POP CHANGELING -1
 
-#MIN_POP WIZARD 20
-#MAX_POP WIZARD -1
+MIN_POP WIZARD 20
+MAX_POP WIZARD -1
 
-#MIN_POP MONKEY 20
-#MAX_POP MONKEY -1
+MIN_POP MONKEY 20
+MAX_POP MONKEY -1
 
-#MIN_POP METEOR 0
-#MAX_POP METEOR -1
+MIN_POP METEOR 0
+MAX_POP METEOR -1
 
-#MIN_POP DEVIL 0
-#MAX_POP DEVIL -1
+MIN_POP DEVIL 20
+MAX_POP DEVIL -1
 
-#MIN_POP DEVIL_AGENTS 25
-#MAX_POP DEVIL_AGENTS -1
+MIN_POP DEVIL_AGENTS 25
+MAX_POP DEVIL_AGENTS -1
 
 MIN_POP INCURSION 22
 MAX_POP INCURSION -1
@@ -308,7 +294,7 @@ EQUAL_JOB_WEIGHT
 DEFAULT_REP_VALUE 5
 
 ## Uncomment to allow players to see the set odds of different rounds in secret/random in the get server revision screen. This will NOT tell the current roundtype.
-SHOW_GAME_TYPE_ODDS
+#SHOW_GAME_TYPE_ODDS
 
 ## Uncomment to enable dynamic ruleset config file.
 DYNAMIC_CONFIG_ENABLED
@@ -345,7 +331,7 @@ ALLOW_AI_MULTICAM
 ## AWAY MISSIONS ###
 
 ## Uncomment to load one of the missions from awaymissionconfig.txt at roundstart.
-ROUNDSTART_AWAY
+#ROUNDSTART_AWAY
 
 ## How long the delay is before the Away Mission gate opens. Default is half an hour.
 ## 600 is one minute.
@@ -366,7 +352,7 @@ MINIMAL_ACCESS_THRESHOLD 20
 #JOBS_HAVE_MINIMAL_ACCESS
 
 ## Uncomment to give assistants maint access.
-#ASSISTANTS_HAVE_MAINT_ACCESS
+ASSISTANTS_HAVE_MAINT_ACCESS
 
 ## Uncoment to give security maint access. Note that if you dectivate JOBS_HAVE_MINIMAL_ACCESS security already gets maint from that.
 SECURITY_HAS_MAINT_ACCESS
@@ -404,7 +390,7 @@ NEAR_DEATH_EXPERIENCE
 ## Set to 1 for "custom", silicons will start with the custom laws defined in silicon_laws.txt. (If silicon_laws.txt is empty, the AI will spawn with asimov and Custom boards will auto-delete.)
 ## Set to 2 for "random", silicons will start with a random lawset picked from random laws specified below.
 ## Set to 3 for "weighted random", using values in "silicon_weights.txt", a law will be selected, with weights specifed in that file.
-DEFAULT_LAWS 0
+DEFAULT_LAWS 1
 
 ## RANDOM LAWS ##
 ## ------------------------------------------------------------------------------------------
@@ -482,21 +468,24 @@ SILICON_MAX_LAW_AMOUNT 12
 ## You probably want humans on your space station, but technically speaking you can turn them off without any ill effect
 ROUNDSTART_RACES human
 
+## You probably want humans on your space station, but technically speaking you can turn them off without any ill effect
+ROUNDSTART_RACES human
+
 ## Races that are strictly worse than humans that could probably be turned on without balance concerns
 ROUNDSTART_RACES lizard
-#ROUNDSTART_RACES fly
+ROUNDSTART_RACES fly
 ROUNDSTART_RACES moth
-ROUNDSTART_RACES plasmaman
 ROUNDSTART_RACES felinid
-#ROUNDSTART_RACES squid
-#ROUNDSTART_RACES shadow
-ROUNDSTART_RACES ipc
+ROUNDSTART_RACES squid
+
 
 ## Races that are better than humans in some ways, but worse in others
 ROUNDSTART_RACES ethereal
 ROUNDSTART_RACES apid
-#ROUNDSTART_RACES oozeling
+ROUNDSTART_RACES oozeling
 #ROUNDSTART_RACES jelly
+#ROUNDSTART_RACES shadow
+ROUNDSTART_RACES plasmaman
 #ROUNDSTART_RACES iron_golem
 #ROUNDSTART_RACES adamantine_golem
 #ROUNDSTART_RACES plasma_golem
@@ -506,12 +495,13 @@ ROUNDSTART_RACES apid
 #ROUNDSTART_RACES uranium_golem
 #ROUNDSTART_RACES abductor
 #ROUNDSTART_RACES synth
+ROUNDSTART_RACES ipc
 
 ## Races that are straight upgrades. If these are on expect powergamers to always pick them
 #ROUNDSTART_RACES skeleton
 #ROUNDSTART_RACES zombie
 #ROUNDSTART_RACES slime
-ROUNDSTART_RACES pod
+#ROUNDSTART_RACES pod
 #ROUNDSTART_RACES military_synth
 #ROUNDSTART_RACES agent
 
@@ -534,7 +524,7 @@ OVERFLOW_CAP -1
 
 ## Starlight for exterior walls and breaches. Uncomment for starlight!
 ## This is disabled by default to make testing quicker, should be enabled on production servers or testing servers messing with lighting
-#STARLIGHT
+STARLIGHT
 
 ## Uncomment to bring back old grey suit assistants instead of the now default rainbow colored assistants.
 GREY_ASSISTANTS
@@ -579,21 +569,21 @@ BOMBCAP 24
 LAVALAND_BUDGET 60
 
 ## Space Ruin Budged
-Space_Budget 15
+Space_Budget 8
 
 ## Time in ds from when a player latejoins till the arrival shuttle docks at the station
 ## Must be at least 30. At least 55 recommended to be visually/aurally appropriate
-ARRIVALS_SHUTTLE_DOCK_WINDOW 130
+ARRIVALS_SHUTTLE_DOCK_WINDOW 55
 
 ## Uncomment to require the arrivals shuttle to be in flight (if it can fly) before late join players can join
-ARRIVALS_SHUTTLE_REQUIRE_UNDOCKED
+#ARRIVALS_SHUTTLE_REQUIRE_UNDOCKED
 
 ## Uncomment to prevent late join players from spawning if the arrivals shuttle is depressurized
-ARRIVALS_SHUTTLE_REQUIRE_SAFE_LATEJOIN
+#ARRIVALS_SHUTTLE_REQUIRE_SAFE_LATEJOIN
 
 ## How many wirechewing rodents you want to spawn on exposed maintenane wires at the start of the round. You may wish to set this to 0 if you're testing powernets.
 
-MICE_ROUNDSTART 7
+MICE_ROUNDSTART 10
 
 ## If the percentage of players alive (doesn't count conversions) drops below this threshold the emergency shuttle will be forcefully called (provided it can be)
 #EMERGENCY_SHUTTLE_AUTOCALL_THRESHOLD 0.2
@@ -609,36 +599,36 @@ ROUNDSTART_TRAITS
 #DISABLE_HUMAN_MOOD
 
 ## Enable night shifts ##
-#ENABLE_NIGHT_SHIFTS
+ENABLE_NIGHT_SHIFTS
 
 ## Enable randomized shift start times##
-#RANDOMIZE_SHIFT_TIME
+RANDOMIZE_SHIFT_TIME
 
 ## Sets shift time to server time at roundstart. Overridden by RANDOMIZE_SHIFT_TIME ##
-SHIFT_TIME_REALTIME
+#SHIFT_TIME_REALTIME
+
+## A cap on how many monkeys may be created via monkey cubes
+MONKEYCAP 100
+
+## Max amount of bodies allowed to slimepeople. Has balance considerations as well as technical ones.
+MAX_SLIMEPERSON_BODIES 10
 
 ## Maximum fine for a citation
-MAXFINE 5000
+MAXFINE 2000
 
 ## Enable the capitalist agenda on your server.
 ECONOMY
 
 ## Crew objectives
-#ALLOW_CREW_OBJECTIVES
-
-## Mob spam prevention. The number of each mobtype that can be alive at once. Stops people from crashing the server with chickens/monkeycubes/slimes. Altering these values is recommended based on server hardware.
-MAX_CUBE_MONKEYS 150
-MAX_CHICKENS 100
-MAX_SLIMES 100
+ALLOW_CREW_OBJECTIVES
 
 ## Uncomment to restrict suiciding. Adds an additional confirmation dialogue, additional logging, and prevents suicide within the first 15 minutes of the round.
 RESTRICTED_SUICIDE
 
-
 ## Bluespace Miners.
 
 ## Amount of miner boards in the RD's locker at roundstart.
-ROUNDSTART_BLUESPACE_MINERS 2
+ROUNDSTART_BLUESPACE_MINERS 0
 
 ## Enable the bluespace miner research node?
-BSMINER_RESEARCHABLE
+#BSMINER_RESEARCHABLE
