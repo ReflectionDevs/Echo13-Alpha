@@ -1,0 +1,4 @@
+author: ReflectionBot
+delete-after: true
+changes:
+  - bugfix: Telepathic messages are chat filtered.
