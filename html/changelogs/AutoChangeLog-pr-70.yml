@@ -1,4 +1,0 @@
-author: ReflectionBot
-delete-after: true
-changes:
-  - bugfix: Warp cubes and fulton kits no longer delete their user.
