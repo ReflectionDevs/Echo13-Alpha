@@ -3551,19 +3551,6 @@
 	},
 /turf/open/floor/plating,
 /area/science/xenobiology)
-"afH" = (
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/structure/extinguisher_cabinet{
-	pixel_x = -26
-	},
-/obj/effect/turf_decal/stripes/corner{
-	dir = 8
-	},
-/turf/open/floor/plasteel/dark,
-/area/medical/surgery)
 "afI" = (
 /obj/effect/turf_decal/tile/purple{
 	dir = 4
@@ -13639,29 +13626,6 @@
 /obj/structure/sign/warning/securearea,
 /turf/closed/wall,
 /area/bridge)
-"aux" = (
-/obj/structure/table/glass,
-/obj/item/storage/box/rxglasses{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/storage/box/beakers,
-/obj/item/gun/syringe{
-	pixel_y = 5
-	},
-/obj/item/reagent_containers/spray/cleaner,
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/machinery/light_switch{
-	pixel_y = 24
-	},
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/medical/storage)
 "auy" = (
 /obj/structure/sign/warning/electricshock,
 /turf/closed/wall/r_wall,
@@ -14196,8 +14160,8 @@
 /obj/item/radio/intercom{
 	pixel_x = -28
 	},
-/obj/machinery/iv_drip,
 /obj/machinery/stasis,
+/obj/machinery/anesthetic_machine,
 /turf/open/floor/plasteel/dark,
 /area/security/warden)
 "avu" = (
@@ -16820,28 +16784,6 @@
 	},
 /turf/open/floor/plating,
 /area/maintenance/department/electrical)
-"ayW" = (
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
-	},
-/obj/structure/table,
-/obj/item/clipboard{
-	pixel_x = 4;
-	pixel_y = 4
-	},
-/obj/item/book/manual/wiki/surgery,
-/obj/item/clothing/gloves/color/latex,
-/obj/item/clothing/mask/surgical,
-/obj/item/clothing/suit/apron/surgical,
-/obj/machinery/firealarm{
-	dir = 8;
-	pixel_x = 28
-	},
-/obj/effect/turf_decal/stripes/corner,
-/obj/item/blood_filter,
-/turf/open/floor/plasteel/dark,
-/area/medical/surgery)
 "ayX" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -100993,6 +100935,20 @@
 	},
 /turf/open/floor/plating,
 /area/hallway/secondary/exit/departure_lounge)
+"eRI" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/extinguisher_cabinet{
+	pixel_x = -26
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/obj/machinery/anesthetic_machine,
+/turf/open/floor/plasteel/dark,
+/area/medical/surgery)
 "eSS" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
@@ -101245,11 +101201,57 @@
 /obj/machinery/door/firedoor/window,
 /turf/open/floor/plating,
 /area/maintenance/solars/port/aft)
+"pTS" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/structure/table,
+/obj/item/clipboard{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/book/manual/wiki/surgery,
+/obj/item/clothing/gloves/color/latex,
+/obj/item/clothing/mask/surgical,
+/obj/item/clothing/suit/apron/surgical,
+/obj/machinery/firealarm{
+	dir = 8;
+	pixel_x = 28
+	},
+/obj/effect/turf_decal/stripes/corner,
+/obj/item/glove_box,
+/turf/open/floor/plasteel/dark,
+/area/medical/surgery)
 "qgI" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/door/firedoor/window,
 /turf/open/floor/plating,
 /area/security/processing)
+"qDr" = (
+/obj/structure/table/glass,
+/obj/item/storage/box/rxglasses{
+	pixel_x = 4;
+	pixel_y = 4
+	},
+/obj/item/storage/box/beakers,
+/obj/item/gun/syringe{
+	pixel_y = 5
+	},
+/obj/item/reagent_containers/spray/cleaner,
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/light_switch{
+	pixel_y = 24
+	},
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/item/glove_box,
+/turf/open/floor/plasteel/dark,
+/area/medical/storage)
 "qWv" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/layer_manifold{
@@ -119117,7 +119119,7 @@ aVI
 aPB
 aBF
 aOZ
-aux
+qDr
 aOO
 aQv
 aIh
@@ -119641,7 +119643,7 @@ aPC
 aPI
 aSA
 aOZ
-afH
+eRI
 bdp
 aUs
 aQN
@@ -120669,7 +120671,7 @@ aQQ
 aWM
 aVV
 aQL
-ayW
+pTS
 aUu
 bdP
 bgS
