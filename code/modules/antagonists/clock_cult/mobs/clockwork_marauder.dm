@@ -23,7 +23,7 @@
 
 	attacktext = "slices"
 	attack_sound = 'sound/weapons/bladeslice.ogg'
-	chat_color = "#CAA25B"
+	mobsay_color = "#CAA25B"
 	mobchatspan = "brassmobsay"
 	obj_damage = 80
 	melee_damage = 24

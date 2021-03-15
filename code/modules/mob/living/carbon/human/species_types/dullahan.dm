@@ -121,10 +121,10 @@
 		. = PROCESS_KILL
 		qdel(src)
 
-/obj/item/dullahan_relay/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, list/message_mods = list())
+/obj/item/dullahan_relay/Hear(message, atom/movable/speaker, message_language, raw_message, radio_freq, list/spans, message_mode)
 	. = ..()
 	if(!QDELETED(owner))
-		message = compose_message(speaker, message_language, raw_message, radio_freq, spans, message_mods)
+		message = compose_message(speaker, message_language, raw_message, radio_freq, spans, message_mode)
 		to_chat(owner,message)
 	else
 		qdel(src)

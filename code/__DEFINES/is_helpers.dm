@@ -195,7 +195,7 @@ GLOBAL_LIST_INIT(heavyfootmob, typecacheof(list(
 
 #define iscameramob(A) (istype(A, /mob/camera))
 
-#define isaicamera(A) (istype(A, /mob/camera/ai_eye))
+#define isaicamera(A) (istype(A, /mob/camera/aiEye))
 
 //Footstep helpers
 #define isshoefoot(A) (is_type_in_typecache(A, GLOB.shoefootmob))

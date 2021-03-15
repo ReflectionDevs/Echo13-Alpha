@@ -29,7 +29,7 @@
 	stop_automated_movement_when_pulled = 1
 	blood_volume = BLOOD_VOLUME_NORMAL
 	var/obj/item/udder/udder = null
-	chat_color = "#B2CEB3"
+	mobsay_color = "#B2CEB3"
 
 	do_footstep = TRUE
 
@@ -132,7 +132,7 @@
 	var/obj/item/udder/udder = null
 	gold_core_spawnable = FRIENDLY_SPAWN
 	blood_volume = BLOOD_VOLUME_NORMAL
-	chat_color = "#FFFFFF"
+	mobsay_color = "#FFFFFF"
 
 	do_footstep = TRUE
 
@@ -211,7 +211,7 @@
 	pass_flags = PASSTABLE | PASSGRILLE | PASSMOB
 	mob_size = MOB_SIZE_TINY
 	gold_core_spawnable = FRIENDLY_SPAWN
-	chat_color = "#FFDC9B"
+	mobsay_color = "#FFDC9B"
 
 	do_footstep = TRUE
 
@@ -280,7 +280,7 @@
 	var/list/validColors = list("brown","black","white")
 	gold_core_spawnable = FRIENDLY_SPAWN
 	var/static/chicken_count = 0
-	chat_color = "#FFDC9B"
+	mobsay_color = "#FFDC9B"
 	mobchatspan = "stationengineer"
 
 	do_footstep = TRUE
@@ -364,7 +364,7 @@
 	feedMessages = list("It gobbles up the food voraciously.","It clucks happily.")
 	validColors = list("plain")
 	gold_core_spawnable = FRIENDLY_SPAWN
-	chat_color = "#FFDC9B"
+	mobsay_color = "#FFDC9B"
 
 /obj/item/udder
 	name = "udder"

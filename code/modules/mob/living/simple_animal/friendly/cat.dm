@@ -33,7 +33,7 @@
 	collar_type = "cat"
 	can_be_held = TRUE
 	held_state = "cat2"
-	chat_color = "#FFD586"
+	mobsay_color = "#FFD586"
 
 	do_footstep = TRUE
 
