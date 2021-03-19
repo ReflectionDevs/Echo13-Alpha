@@ -1,4 +1,0 @@
-author: ReflectionBot
-delete-after: true
-changes:
-  - bugfix: Shields can't take stamina damage.
