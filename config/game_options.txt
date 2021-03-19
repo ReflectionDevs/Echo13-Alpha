@@ -133,6 +133,12 @@ PROBABILITY SECRET_EXTENDED 9
 PROBABILITY DEVIL 0
 PROBABILITY DEVIL_AGENTS 0
 
+<<<<<<< HEAD
+=======
+## Creates issues when NO_INTERCEPT_REPORT is enabled
+PROBABILITY EXTENDED 0 
+
+>>>>>>> bb6dafc1d6 (Revert "Special beeshop cosmetics for donators! (#3368)" (#3920))
 ## You probably want to keep sandbox off by default for secret and random.
 PROBABILITY SANDBOX 0
 
