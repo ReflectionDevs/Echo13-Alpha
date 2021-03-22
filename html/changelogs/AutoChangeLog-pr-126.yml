@@ -1,4 +1,0 @@
-author: Vasily2013
-delete-after: true
-changes:
-  - bugfix: all of the external airlocks should have proper controllers.
