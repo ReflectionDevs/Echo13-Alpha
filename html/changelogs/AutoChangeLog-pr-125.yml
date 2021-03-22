@@ -1,0 +1,4 @@
+author: ReflectionBot
+delete-after: true
+changes:
+  - rscadd: Adds donator items in the beecoin shop, for real this time.
