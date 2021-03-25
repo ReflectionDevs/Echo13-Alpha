@@ -1,4 +1,0 @@
-author: ReflectionBot
-delete-after: true
-changes:
-  - tweak: RCD simple electronics upgrade no longer locks the APC you are building
