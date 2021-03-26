@@ -1,0 +1,4 @@
+author: ReflectionBot
+delete-after: true
+changes:
+  - tweak: ports new animation sprite for wag
