@@ -1,0 +1,4 @@
+author: ReflectionBot
+delete-after: true
+changes:
+  - rscdel: removes runed metal debris from the cult archive in station library
