@@ -21,10 +21,10 @@ SUBSYSTEM_DEF(job)
 	var/list/chain_of_command = list(
 		"Captain" = 1,				//Not used yet but captain is first in chain_of_command
 		"Head of Personnel" = 2,
-		"Research Director" = 3,
-		"Chief Engineer" = 4,
-		"Chief Medical Officer" = 5,
-		"Head of Security" = 6)
+		"Head of Security" = 3,
+		"Research Director" = 4,
+		"Chief Engineer" = 5,
+		"Chief Medical Officer" = 6)
 
 /datum/controller/subsystem/job/Initialize(timeofday)
 	SSmapping.HACK_LoadMapConfig()
@@ -713,7 +713,7 @@ SUBSYSTEM_DEF(job)
 /datum/controller/subsystem/job/proc/JobDebug(message)
 	log_job_debug(message)
 
-obj/item/paper/fluff/spare_id_safe_code
+/obj/item/paper/fluff/spare_id_safe_code
 	name = "Nanotrasen-Approved Spare ID Safe Code"
 	desc = "Proof that you have been approved for Captaincy, with all its glory and all its horror."
 
@@ -730,12 +730,12 @@ obj/item/paper/fluff/spare_id_safe_code
 	if(!spare_id_safe_code)
 		CRASH("Cannot promote [H.real_name] to Captain, there is no spare_id_safe_code.")
 
-	var/paper = new /obj/item/paper/fluff/spare_id_safe_code()
+	var/paper = new /obj/item/paper/fluff/spare_id_safe_code(H.loc)
 	var/list/slots = list(
-		LOCATION_LPOCKET = "in your left pocket",
-		LOCATION_RPOCKET = "in your right pocket",
-		LOCATION_BACKPACK = "in your backpack",
-		LOCATION_HANDS = "in your hands"
+		"in your left pocket" = ITEM_SLOT_LPOCKET,
+		"in your right pocket" = ITEM_SLOT_RPOCKET,
+		"in your backpack" = ITEM_SLOT_BACKPACK,
+		"in your hands" = ITEM_SLOT_HANDS
 	)
 	var/where = H.equip_in_one_of_slots(paper, slots, FALSE) || "at your feet"
 
