@@ -1,3 +1,4 @@
+
 /**
   * The base type for nearly all physical objects in SS13
 
@@ -523,25 +524,6 @@
 
 /// Handle what happens when your contents are exploded by a bomb
 /atom/proc/contents_explosion(severity, target)
-	if(target == null)
-		target = src
-	if(isturf(target))
-		switch(severity)
-			if(EXPLODE_DEVASTATE)
-				SSexplosions.highturf += target
-			if(EXPLODE_HEAVY)
-				SSexplosions.medturf += target
-			if(EXPLODE_LIGHT)
-				SSexplosions.lowturf += target
-
-	if(isobj(target))
-		switch(severity)
-			if(EXPLODE_DEVASTATE)
-				SSexplosions.low_mov_atom += target
-			if(EXPLODE_HEAVY)
-				SSexplosions.med_mov_atom += target
-			if(EXPLODE_LIGHT)
-				SSexplosions.low_mov_atom += target
 	return //For handling the effects of explosions on contents that would not normally be effected
 
 /**
@@ -956,7 +938,7 @@
 						if(!valid_id)
 							to_chat(usr, "<span class='warning'>A reagent with that ID doesn't exist!</span>")
 				if("Choose from a list")
-					chosen_id = input(usr, "Choose a reagent to add.", "Choose a reagent.") as null|anything in subtypesof(/datum/reagent)
+					chosen_id = tgui_input_list(usr, "Choose a reagent to add.", "Choose a reagent.", subtypesof(/datum/reagent))
 				if("I'm feeling lucky")
 					chosen_id = pick(subtypesof(/datum/reagent))
 			if(chosen_id)
@@ -1255,4 +1237,20 @@
   * Override this if you want custom behaviour in whatever gets hit by the rust
   */
 /atom/proc/rust_heretic_act()
+	return
+
+/**
+  * Used to set something as 'open' if it's being used as a supplypod
+  *
+  * Override this if you want an atom to be usable as a supplypod.
+  */
+/atom/proc/setOpened()
+	return
+
+/**
+  * Used to set something as 'closed' if it's being used as a supplypod
+  *
+  * Override this if you want an atom to be usable as a supplypod.
+  */
+/atom/proc/setClosed()
 	return

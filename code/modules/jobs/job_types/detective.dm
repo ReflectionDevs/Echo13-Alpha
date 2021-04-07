@@ -17,8 +17,8 @@
 
 	outfit = /datum/outfit/job/detective
 
-	access = list(ACCESS_SEC_DOORS, ACCESS_FORENSICS_LOCKERS, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_BRIG, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_KEYCARD_AUTH)
-	minimal_access = list(ACCESS_SEC_DOORS, ACCESS_FORENSICS_LOCKERS, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_BRIG, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_KEYCARD_AUTH)
+	access = list(ACCESS_SEC_DOORS, ACCESS_SEC_RECORDS, ACCESS_FORENSICS_LOCKERS, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_BRIG, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_KEYCARD_AUTH)
+	minimal_access = list(ACCESS_SEC_DOORS, ACCESS_SEC_RECORDS, ACCESS_FORENSICS_LOCKERS, ACCESS_MORGUE, ACCESS_MAINT_TUNNELS, ACCESS_MECH_SECURITY, ACCESS_COURT, ACCESS_BRIG, ACCESS_WEAPONS, ACCESS_MINERAL_STOREROOM, ACCESS_KEYCARD_AUTH)
 	paycheck = PAYCHECK_MEDIUM
 	paycheck_department = ACCOUNT_SEC
 	mind_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
@@ -32,12 +32,10 @@
 	id = /obj/item/card/id/job/detective
 	belt = /obj/item/pda/detective
 	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/security/detective
-	neck = /obj/item/clothing/neck/tie/detective
-	shoes = /obj/item/clothing/shoes/sneakers/brown
-	suit = /obj/item/clothing/suit/det_suit
+	uniform = /obj/item/clothing/under/rank/security/detective/grey
+	shoes = /obj/item/clothing/shoes/laceup
+	suit = /obj/item/clothing/suit/det_suit/det
 	gloves = /obj/item/clothing/gloves/color/black
-	head = /obj/item/clothing/head/fedora/det_hat
 	l_pocket = /obj/item/toy/crayon/white
 	r_pocket = /obj/item/lighter
 	backpack_contents = list(/obj/item/storage/box/evidence=1,\
