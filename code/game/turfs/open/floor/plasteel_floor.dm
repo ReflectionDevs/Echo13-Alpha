@@ -300,4 +300,3 @@
 /turf/open/floor/plasteel/dark/brown/corner
 	icon_state = "darkbrowncorners"
 	base_icon_state = "darkbrowncorners"
-
