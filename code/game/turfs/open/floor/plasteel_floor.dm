@@ -195,14 +195,10 @@
 	floor_tile = /obj/item/stack/tile/techmaint
 	
 	
-//New cool floors ported from TauCeti/Skyrat begin here
-	
-	// Plasteel Kitchen
 /turf/open/floor/plasteel/kitchen
 	icon_state = "blackchecker"
 	base_icon_state = "blackchecker"
 
-// Plasteel + Red
 /turf/open/floor/plasteel/red
 	icon_state = "redfull"
 	base_icon_state = "redfull"
@@ -214,7 +210,6 @@
 	icon_state = "redcorner"
 	base_icon_state = "redcorner"
 
-// Plasteel + Green
 /turf/open/floor/plasteel/green
 	icon_state = "greenfull"
 	base_icon_state = "greenfull"
@@ -226,7 +221,6 @@
 	icon_state = "greencorner"
 	base_icon_state = "greencorner"
 
-// Plasteel + Brown
 /turf/open/floor/plasteel/brown/side
 	icon_state = "brown"
 	base_icon_state = "brown"
@@ -235,7 +229,6 @@
 	icon_state = "browncorners"
 	base_icon_state = "browncorners"
 
-// Dark + Purple
 /turf/open/floor/plasteel/dark/purple
 	icon_state = "darkpurplefull"
 	base_icon_state = "darkpurplefull"
@@ -248,7 +241,6 @@
 	icon_state = "darkpurplecorners"
 	base_icon_state = "darkpurplecorners"
 
-// Dark + Red
 /turf/open/floor/plasteel/dark/red
 	icon_state = "darkredfull"
 	base_icon_state = "darkredfull"
@@ -261,7 +253,6 @@
 	icon_state = "darkredcorners"
 	base_icon_state = "darkredcorners"
 
-// Dark + Blue
 /turf/open/floor/plasteel/dark/blue
 	icon_state = "darkbluefull"
 	base_icon_state = "darkbluefull"
@@ -274,7 +265,6 @@
 	icon_state = "darkbluecorners"
 	base_icon_state = "darkbluecorners"
 
-// Dark + Green
 /turf/open/floor/plasteel/dark/green
 	icon_state = "darkgreenfull"
 	base_icon_state = "darkgreenfull"
@@ -287,7 +277,6 @@
 	icon_state = "darkgreencorners"
 	base_icon_state = "darkgreencorners"
 
-// Dark + Yellow
 /turf/open/floor/plasteel/dark/yellow
 	icon_state = "darkyellowfull"
 	base_icon_state = "darkyellowfull"
@@ -300,7 +289,6 @@
 	icon_state = "darkyellowcorners"
 	base_icon_state = "darkyellowcorners"
 
-// Dark + Brown
 /turf/open/floor/plasteel/dark/brown
 	icon_state = "darkbrownfull"
 	base_icon_state = "darkbrownfull"
@@ -312,3 +300,4 @@
 /turf/open/floor/plasteel/dark/brown/corner
 	icon_state = "darkbrowncorners"
 	base_icon_state = "darkbrowncorners"
+
