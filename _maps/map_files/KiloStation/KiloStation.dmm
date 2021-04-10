@@ -1005,7 +1005,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/machinery/door/firedoor,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/security/warden)
 "acg" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
@@ -69300,7 +69300,7 @@
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
 	dir = 4
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/security/warden)
 "cbd" = (
 /obj/effect/spawner/structure/window,
@@ -69370,7 +69370,7 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 10
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/security/warden)
 "cbj" = (
 /obj/structure/girder,
@@ -71939,6 +71939,10 @@
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "permaerpshutters3";
+	name = "Privacy Shutters"
+	},
 /turf/open/floor/plating,
 /area/security/prison)
 "cfO" = (
@@ -72027,7 +72031,7 @@
 	dir = 8;
 	icon_state = "scrub_map_on-1"
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/security/warden)
 "cfX" = (
 /obj/structure/sign/departments/security,
@@ -88588,10 +88592,10 @@
 /area/security/prison)
 "cJf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/structure/curtain/bounty{
+/obj/structure/curtain/obscuring/grey{
 	color = "#ACD1E9";
 	icon_state = "bathroom-closed";
-	icon_type = "bathroom";
+	name = "Opaque Plastic Curtains";
 	open = 0
 	},
 /turf/open/floor/plating,
@@ -88616,10 +88620,10 @@
 /area/security/prison)
 "cJh" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
-/obj/structure/curtain/bounty{
+/obj/structure/curtain/obscuring/grey{
 	color = "#ACD1E9";
 	icon_state = "bathroom-closed";
-	icon_type = "bathroom";
+	name = "Opaque Plastic Curtains";
 	open = 0
 	},
 /turf/open/floor/plating{
@@ -93525,6 +93529,21 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/main)
+"ffO" = (
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/obj/structure/bed,
+/obj/machinery/button/door{
+	id = "permaerpshutters1";
+	name = "Privacy Shutters";
+	normaldoorcontrol = 1;
+	pixel_x = 24;
+	pixel_y = 9;
+	specialfunctions = 4
+	},
+/turf/open/floor/plasteel,
+/area/security/prison)
 "fgS" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 5
@@ -93690,6 +93709,22 @@
 /obj/machinery/hydroponics/soil,
 /obj/machinery/light,
 /turf/open/floor/grass,
+/area/security/prison)
+"fGr" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/firedoor/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "permawinextblast";
+	name = "Prison Wing Exterior Window Blast Doors"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "permaerpshutters3";
+	name = "Privacy Shutters"
+	},
+/turf/open/floor/plating,
 /area/security/prison)
 "fGH" = (
 /obj/effect/spawner/structure/window/reinforced,
@@ -93861,10 +93896,10 @@
 /area/security/warden)
 "fXp" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/curtain/bounty{
+/obj/structure/curtain/obscuring/grey{
 	color = "#ACD1E9";
 	icon_state = "bathroom-closed";
-	icon_type = "bathroom";
+	name = "Opaque Plastic Curtains";
 	open = 0
 	},
 /turf/open/floor/plating{
@@ -93968,6 +94003,14 @@
 	icon_state = "1-2"
 	},
 /obj/structure/bed,
+/obj/machinery/button/door{
+	id = "permaerpshutters2";
+	name = "Privacy Shutters";
+	normaldoorcontrol = 1;
+	pixel_x = 24;
+	pixel_y = 9;
+	specialfunctions = 4
+	},
 /turf/open/floor/plasteel,
 /area/security/prison)
 "gKt" = (
@@ -94038,6 +94081,22 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/main)
+"haS" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/firedoor/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "permawinextblast";
+	name = "Prison Wing Exterior Window Blast Doors"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "permaerpshutters2";
+	name = "Privacy Shutters"
+	},
+/turf/open/floor/plating,
+/area/security/prison)
 "hgP" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
@@ -94121,6 +94180,23 @@
 	dir = 4
 	},
 /turf/open/floor/plasteel,
+/area/security/prison)
+"hqU" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/machinery/door/firedoor/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "permawinextblast";
+	name = "Prison Wing Exterior Window Blast Doors"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "permaerpshutters1";
+	name = "Privacy Shutters"
+	},
+/turf/open/floor/plating,
 /area/security/prison)
 "hqX" = (
 /obj/machinery/atmospherics/components/unary/vent_pump/on{
@@ -94609,7 +94685,7 @@
 	dir = 1
 	},
 /obj/effect/landmark/start/security_officer,
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/security/warden)
 "jZf" = (
 /obj/effect/decal/cleanable/dirt,
@@ -95416,6 +95492,17 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/main)
+"nAO" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "permaerpshutters1";
+	name = "Privacy Shutters"
+	},
+/turf/open/floor/plating,
+/area/security/prison)
 "nJs" = (
 /obj/structure/table,
 /obj/machinery/microwave{
@@ -95697,6 +95784,10 @@
 /obj/machinery/door/poddoor/preopen{
 	id = "permawinextblast";
 	name = "Prison Wing Exterior Window Blast Doors"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "permaerpshutters3";
+	name = "Privacy Shutters"
 	},
 /turf/open/floor/plating,
 /area/security/prison)
@@ -96313,7 +96404,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/security/warden)
 "rJW" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
@@ -96558,6 +96649,17 @@
 /obj/machinery/door/firedoor/window,
 /turf/open/floor/plating,
 /area/maintenance/starboard/aft)
+"sME" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "permaerpshutters2";
+	name = "Privacy Shutters"
+	},
+/turf/open/floor/plating,
+/area/security/prison)
 "sMN" = (
 /obj/machinery/door/airlock/external{
 	name = "Labor Camp Shuttle Airlock";
@@ -96785,6 +96887,14 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/bed,
+/obj/machinery/button/door{
+	id = "permaerpshutters3";
+	name = "Privacy Shutters";
+	normaldoorcontrol = 1;
+	pixel_x = 24;
+	pixel_y = 9;
+	specialfunctions = 4
+	},
 /turf/open/floor/plasteel,
 /area/security/prison)
 "tJn" = (
@@ -96891,6 +97001,22 @@
 "tYz" = (
 /turf/closed/wall/r_wall/rust,
 /area/security/execution/education)
+"tYK" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow{
+	icon_state = "0-4"
+	},
+/obj/machinery/door/firedoor/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "permawinextblast";
+	name = "Prison Wing Exterior Window Blast Doors"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "permaerpshutters1";
+	name = "Privacy Shutters"
+	},
+/turf/open/floor/plating,
+/area/security/prison)
 "ucz" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
@@ -96986,6 +97112,23 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/heads/hos)
+"unY" = (
+/obj/effect/spawner/structure/window/reinforced,
+/obj/structure/cable/yellow,
+/obj/structure/cable/yellow{
+	icon_state = "1-8"
+	},
+/obj/machinery/door/firedoor/window,
+/obj/machinery/door/poddoor/preopen{
+	id = "permawinextblast";
+	name = "Prison Wing Exterior Window Blast Doors"
+	},
+/obj/machinery/door/poddoor/shutters/preopen{
+	id = "permaerpshutters2";
+	name = "Privacy Shutters"
+	},
+/turf/open/floor/plating,
+/area/security/prison)
 "uom" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 1
@@ -97248,6 +97391,11 @@
 	},
 /turf/open/floor/plasteel/white,
 /area/security/warden)
+"vMQ" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/spawner/lootdrop/maintenance/two,
+/turf/open/floor/plating,
+/area/maintenance/port/aft)
 "vNy" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden{
@@ -97305,6 +97453,12 @@
 /obj/machinery/door/firedoor,
 /turf/open/floor/plasteel/dark,
 /area/security/processing)
+"vVY" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/closet/emcloset/anchored,
+/obj/effect/spawner/lootdrop/maintenance/three,
+/turf/open/floor/plating,
+/area/maintenance/port/aft)
 "vZk" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -97657,7 +97811,7 @@
 	name = "Interrogation Intercom";
 	pixel_y = 34
 	},
-/turf/open/floor/plasteel,
+/turf/open/floor/plasteel/dark,
 /area/security/warden)
 "xqS" = (
 /obj/effect/decal/cleanable/dirt,
@@ -108386,7 +108540,7 @@ nLb
 cfN
 cMw
 lLg
-tlH
+fGr
 aeU
 aeU
 cmU
@@ -109154,10 +109308,10 @@ cJq
 nLb
 lOe
 asO
-cfN
+sME
 fQl
 fwp
-tlH
+haS
 aeU
 aeU
 cmU
@@ -109414,7 +109568,7 @@ cJw
 xFY
 pjR
 gvC
-oUc
+unY
 aeU
 cmU
 cmU
@@ -109925,10 +110079,10 @@ cBE
 nLb
 cJo
 cec
-cfN
+nAO
 etY
 fwp
-tlH
+tYK
 aeU
 cmU
 ctQ
@@ -110184,8 +110338,8 @@ bTu
 cJx
 cfO
 pjR
-gvC
-oUc
+ffO
+hqU
 xOH
 cmU
 cra
@@ -115565,9 +115719,9 @@ bMa
 bGu
 bMr
 awD
+vVY
 abY
-abY
-abY
+vMQ
 cJr
 dGN
 cfZ
