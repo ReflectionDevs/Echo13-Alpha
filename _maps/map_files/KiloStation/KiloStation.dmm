@@ -69488,6 +69488,7 @@
 /obj/structure/chair/office{
 	dir = 4
 	},
+/obj/effect/landmark/start/warden,
 /turf/open/floor/plasteel/dark,
 /area/security/warden)
 "cbx" = (
@@ -73113,6 +73114,7 @@
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 10
 	},
+/obj/effect/landmark/start/warden,
 /turf/open/floor/plasteel,
 /area/security/warden)
 "chK" = (
@@ -93352,6 +93354,7 @@
 /obj/structure/chair{
 	dir = 8
 	},
+/obj/effect/landmark/start/security_officer,
 /turf/open/floor/plasteel/dark,
 /area/security/main)
 "eFT" = (
@@ -94456,13 +94459,19 @@
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "jjE" = (
-/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
 	dir = 8
 	},
-/obj/machinery/power/apc/highcap/fifteen_k,
+/obj/effect/landmark/start/head_of_security,
 /turf/open/floor/plasteel/dark,
-/area/security/brig)
+/area/ai_monitored/security/armory)
 "jnU" = (
 /obj/effect/spawner/structure/window/reinforced,
 /obj/structure/cable/yellow,
@@ -94520,6 +94529,7 @@
 	dir = 4
 	},
 /obj/effect/turf_decal/tile/blue,
+/obj/effect/landmark/start/brig_phys,
 /turf/open/floor/plasteel/dark,
 /area/security/warden)
 "jKA" = (
@@ -94585,6 +94595,7 @@
 /obj/machinery/light/small{
 	dir = 1
 	},
+/obj/effect/landmark/start/security_officer,
 /turf/open/floor/plasteel,
 /area/security/warden)
 "jZf" = (
@@ -95197,6 +95208,7 @@
 /obj/effect/turf_decal/tile/blue{
 	dir = 4
 	},
+/obj/effect/landmark/start/brig_phys,
 /turf/open/floor/plasteel/white,
 /area/security/warden)
 "mVO" = (
@@ -95254,6 +95266,7 @@
 	pixel_x = 26;
 	pixel_y = 13
 	},
+/obj/effect/landmark/start/head_of_security,
 /turf/open/floor/carpet/red,
 /area/crew_quarters/heads/hos)
 "njH" = (
@@ -95310,6 +95323,7 @@
 	dir = 8
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/security_officer,
 /turf/open/floor/plasteel/dark,
 /area/security/main)
 "nuN" = (
@@ -95466,6 +95480,11 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/security/warden)
+"nVz" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/detective,
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
 "nXP" = (
 /obj/machinery/flasher/portable,
 /obj/effect/turf_decal/box,
@@ -96440,6 +96459,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
 	},
+/obj/effect/landmark/start/detective,
 /turf/open/floor/plasteel,
 /area/security/warden)
 "sye" = (
@@ -96492,6 +96512,11 @@
 /obj/effect/turf_decal/tile/red,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
+"sAU" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/landmark/start/security_officer,
+/turf/open/floor/plasteel/dark,
+/area/security/main)
 "sCl" = (
 /obj/structure/flora/ausbushes/ppflowers,
 /turf/open/floor/grass,
@@ -96777,6 +96802,7 @@
 /area/security/prison)
 "tPE" = (
 /obj/structure/chair,
+/obj/effect/landmark/start/security_officer,
 /turf/open/floor/plasteel/dark,
 /area/security/main)
 "tSJ" = (
@@ -97034,6 +97060,17 @@
 /mob/living/simple_animal/bot/cleanbot/medbay,
 /turf/open/floor/plasteel/dark,
 /area/medical/storage)
+"uLm" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/brown,
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/obj/effect/landmark/start/warden,
+/turf/open/floor/plasteel/dark,
+/area/security/warden)
 "uNY" = (
 /obj/structure/table/wood,
 /turf/open/floor/plasteel/dark,
@@ -97302,6 +97339,16 @@
 /obj/machinery/light,
 /turf/open/floor/plasteel/dark,
 /area/security/main)
+"wnd" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/obj/effect/landmark/start/security_officer,
+/turf/open/floor/plasteel/dark,
+/area/security/main)
 "wuo" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -97459,6 +97506,20 @@
 /obj/structure/cable/yellow{
 	icon_state = "2-8"
 	},
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/security/armory)
+"xbn" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/landmark/start/warden,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "xbt" = (
@@ -111632,7 +111693,7 @@ bMf
 cLR
 bOW
 bQv
-aeU
+aUz
 aeu
 aeu
 aav
@@ -112147,7 +112208,7 @@ bJX
 bMS
 bQv
 aeU
-aeU
+aUz
 aeU
 aav
 bLj
@@ -113433,7 +113494,7 @@ bOZ
 bQv
 acm
 aeU
-aeU
+aUz
 aav
 bXn
 bYt
@@ -113946,7 +114007,7 @@ bMW
 bDn
 ajd
 aeu
-aeU
+coy
 aeu
 aat
 bTm
@@ -116521,7 +116582,7 @@ cJf
 dvv
 tme
 adp
-cnB
+jjE
 cnB
 wZv
 ani
@@ -116778,7 +116839,7 @@ fXp
 dvC
 tme
 adz
-cnB
+xbn
 cch
 avt
 agd
@@ -117046,7 +117107,7 @@ cjk
 mng
 fGH
 uBa
-sNW
+sAU
 oeq
 pFT
 kTt
@@ -117818,7 +117879,7 @@ wuW
 agS
 nrQ
 xwS
-guM
+wnd
 eNe
 agS
 eeh
@@ -118842,7 +118903,7 @@ ctf
 cIZ
 guU
 cjT
-jjE
+nPq
 fiN
 jKA
 guu
@@ -120380,7 +120441,7 @@ daF
 rsJ
 fJl
 daF
-rsJ
+uLm
 dkh
 szy
 ydB
@@ -120391,7 +120452,7 @@ tOy
 hgV
 lPD
 xrE
-lPD
+nVz
 uDs
 aaf
 aeu
