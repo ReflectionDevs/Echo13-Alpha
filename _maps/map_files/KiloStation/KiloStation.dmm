@@ -88594,8 +88594,10 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/curtain/obscuring/grey{
 	color = "#ACD1E9";
+	desc = "Matte plastic flaps, just thick enough for you to not be able to make out what's behind";
 	icon_state = "bathroom-closed";
 	name = "Opaque Plastic Curtains";
+	opacity = 1;
 	open = 0
 	},
 /turf/open/floor/plating,
@@ -88622,8 +88624,10 @@
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
 /obj/structure/curtain/obscuring/grey{
 	color = "#ACD1E9";
+	desc = "Matte plastic flaps, just thick enough for you to not be able to make out what's behind";
 	icon_state = "bathroom-closed";
 	name = "Opaque Plastic Curtains";
+	opacity = 1;
 	open = 0
 	},
 /turf/open/floor/plating{
@@ -93898,8 +93902,10 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/curtain/obscuring/grey{
 	color = "#ACD1E9";
+	desc = "Matte plastic flaps, just thick enough for you to not be able to make out what's behind";
 	icon_state = "bathroom-closed";
 	name = "Opaque Plastic Curtains";
+	opacity = 1;
 	open = 0
 	},
 /turf/open/floor/plating{
