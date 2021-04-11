@@ -1,5 +1,0 @@
-author: Vexylius
-delete-after: true
-changes:
-  - rscdel: Old Security on KiloStation
-  - rscadd: New Security on KiloStation
