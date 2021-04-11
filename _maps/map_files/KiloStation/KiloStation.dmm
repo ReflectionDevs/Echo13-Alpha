@@ -73875,7 +73875,7 @@
 "cji" = (
 /obj/effect/landmark/start/assistant,
 /turf/open/floor/goonplaque{
-	desc = "\"This is a golden plaque with a text "Echo 13". Coincidentally that's the where this station is located. Neat!"
+	desc = "This is a golden plaque with a text \"Echo 13\". Coincidentally that's the where this station is located. Neat!"
 	},
 /area/hallway/secondary/entry)
 "cjj" = (
