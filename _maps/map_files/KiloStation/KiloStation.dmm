@@ -25073,6 +25073,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/effect/landmark/start/geneticist,
 /turf/open/floor/plasteel/white,
 /area/medical/genetics/cloning)
 "aOw" = (
@@ -25172,7 +25173,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 4
 	},
-/obj/effect/landmark/start/medical_doctor,
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
 	},
@@ -25259,6 +25259,7 @@
 /obj/structure/cable/yellow{
 	icon_state = "4-8"
 	},
+/obj/effect/landmark/start/medical_doctor,
 /turf/open/floor/plasteel/white,
 /area/medical/genetics/cloning)
 "aOH" = (
