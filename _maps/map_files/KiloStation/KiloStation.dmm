@@ -72152,13 +72152,11 @@
 /area/security/prison)
 "cgl" = (
 /obj/structure/cable/yellow,
-/obj/machinery/power/apc/auto_name/east{
-	cell_type = /obj/item/stock_parts/cell/high/plus
-	},
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -28
 	},
 /obj/effect/mapping_helpers/apc/extrapower,
+/obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
 "cgm" = (
@@ -79560,13 +79558,11 @@
 	},
 /area/hallway/secondary/entry)
 "ctv" = (
-/obj/machinery/power/apc/auto_name/south{
-	cell_type = /obj/item/stock_parts/cell/high/plus
-	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
 /obj/effect/mapping_helpers/apc/extrapower,
+/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/plasteel,
 /area/security/warden)
 "ctw" = (
@@ -93087,9 +93083,6 @@
 /turf/open/floor/plasteel,
 /area/security/processing)
 "dvv" = (
-/obj/machinery/power/apc/auto_name/south{
-	cell_type = /obj/item/stock_parts/cell/high/plus
-	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
 	},
@@ -93100,6 +93093,7 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
+/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/plating,
 /area/security/execution/education)
 "dvC" = (
@@ -94472,11 +94466,9 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
-/obj/machinery/power/apc/auto_name/east{
-	cell_type = /obj/item/stock_parts/cell/high/plus
-	},
 /obj/structure/cable/yellow,
 /obj/effect/mapping_helpers/apc/extrapower,
+/obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "iLP" = (
@@ -95603,13 +95595,11 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
-/obj/machinery/power/apc/auto_name/west{
-	cell_type = /obj/item/stock_parts/cell/high/plus
-	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
 /obj/effect/mapping_helpers/apc/extrapower,
+/obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "odC" = (
