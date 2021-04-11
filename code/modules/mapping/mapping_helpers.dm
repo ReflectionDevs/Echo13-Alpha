@@ -171,6 +171,7 @@
 /obj/effect/mapping_helpers/apc/proc/payload(obj/machinery/power/apc/payload)
 	return
 
+//Unpowered APC helper
 /obj/effect/mapping_helpers/apc/discharged
 	name = "apc zero change helper"
 	icon_state = "apc_nopower"
@@ -180,6 +181,20 @@
 	C.charge = 0
 	C.update_icon()
 
+//Extrapowered APC helper
+/obj/effect/mapping_helpers/apc/extrapower
+	name = "apc power cell upgrade helper"
+	icon_state = "apc_extrapower"
+
+/obj/effect/mapping_helpers/apc/extrapower/payload(obj/machinery/power/apc/apc)
+	var/obj/item/stock_parts/cell/C = apc.get_cell()
+	C.name = "Upgraded APC cell"
+	C.desc = "Where did these come from?"
+	C.icon_state = "h+cell"
+	C.maxcharge = 15000
+	C.chargerate = 2250
+	C.charge = 15000
+	C.update_icon()
 
 //needs to do its thing before spawn_rivers() is called
 INITIALIZE_IMMEDIATE(/obj/effect/mapping_helpers/no_lava)
