@@ -1,0 +1,5 @@
+author: Vexylius
+delete-after: true
+changes:
+  - rscadd: A wonderful new mapping helper
+  - bugfix: power issues on Kilo
