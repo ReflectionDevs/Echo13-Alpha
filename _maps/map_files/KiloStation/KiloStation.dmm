@@ -72152,11 +72152,12 @@
 /area/security/prison)
 "cgl" = (
 /obj/structure/cable/yellow,
+/obj/machinery/power/apc/auto_name/east{
+	cell_type = /obj/item/stock_parts/cell/high/plus
+	},
 /obj/structure/extinguisher_cabinet{
 	pixel_y = -28
 	},
-/obj/effect/mapping_helpers/apc/extrapower,
-/obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/plasteel/dark,
 /area/security/prison)
 "cgm" = (
@@ -73874,9 +73875,7 @@
 /area/hallway/primary/fore)
 "cji" = (
 /obj/effect/landmark/start/assistant,
-/turf/open/floor/goonplaque{
-	desc = "This is a golden plaque with a text \"Echo 13\". Coincidentally that's the where this station is located. Neat!"
-	},
+/turf/open/floor/goonplaque,
 /area/hallway/secondary/entry)
 "cjj" = (
 /obj/effect/turf_decal/tile/blue{
@@ -79558,11 +79557,12 @@
 	},
 /area/hallway/secondary/entry)
 "ctv" = (
+/obj/machinery/power/apc/auto_name/south{
+	cell_type = /obj/item/stock_parts/cell/high/plus
+	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
-/obj/effect/mapping_helpers/apc/extrapower,
-/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/plasteel,
 /area/security/warden)
 "ctw" = (
@@ -88593,8 +88593,7 @@
 "cJf" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /obj/structure/curtain/obscuring/grey{
-	color = "#91A8B7";
-	density = 1;
+	color = "#ACD1E9";
 	desc = "Matte plastic flaps, just thick enough for you to not be able to make out what's behind";
 	icon_state = "bathroom-closed";
 	name = "Opaque Plastic Curtains";
@@ -88624,8 +88623,7 @@
 "cJh" = (
 /obj/machinery/atmospherics/components/unary/vent_scrubber/on/layer1,
 /obj/structure/curtain/obscuring/grey{
-	color = "#91A8B7";
-	density = 1;
+	color = "#ACD1E9";
 	desc = "Matte plastic flaps, just thick enough for you to not be able to make out what's behind";
 	icon_state = "bathroom-closed";
 	name = "Opaque Plastic Curtains";
@@ -93083,6 +93081,9 @@
 /turf/open/floor/plasteel,
 /area/security/processing)
 "dvv" = (
+/obj/machinery/power/apc/auto_name/south{
+	cell_type = /obj/item/stock_parts/cell/high/plus
+	},
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 8
 	},
@@ -93093,7 +93094,6 @@
 	icon_state = "0-8"
 	},
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden,
-/obj/machinery/power/apc/auto_name/south,
 /turf/open/floor/plating,
 /area/security/execution/education)
 "dvC" = (
@@ -93541,8 +93541,10 @@
 /obj/machinery/button/door{
 	id = "permaerpshutters1";
 	name = "Privacy Shutters";
+	normaldoorcontrol = 1;
 	pixel_x = 24;
-	pixel_y = 9
+	pixel_y = 9;
+	specialfunctions = 4
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -93899,8 +93901,7 @@
 "fXp" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/curtain/obscuring/grey{
-	color = "#91A8B7";
-	density = 1;
+	color = "#ACD1E9";
 	desc = "Matte plastic flaps, just thick enough for you to not be able to make out what's behind";
 	icon_state = "bathroom-closed";
 	name = "Opaque Plastic Curtains";
@@ -94011,8 +94012,10 @@
 /obj/machinery/button/door{
 	id = "permaerpshutters2";
 	name = "Privacy Shutters";
+	normaldoorcontrol = 1;
 	pixel_x = 24;
-	pixel_y = 9
+	pixel_y = 9;
+	specialfunctions = 4
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -94466,9 +94469,10 @@
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+/obj/machinery/power/apc/auto_name/east{
+	cell_type = /obj/item/stock_parts/cell/high/plus
+	},
 /obj/structure/cable/yellow,
-/obj/effect/mapping_helpers/apc/extrapower,
-/obj/machinery/power/apc/auto_name/east,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
 "iLP" = (
@@ -94516,7 +94520,6 @@
 	icon_state = "0-2"
 	},
 /obj/machinery/power/apc/auto_name/north,
-/obj/effect/mapping_helpers/apc/extrapower,
 /turf/open/floor/plasteel,
 /area/security/main)
 "iZt" = (
@@ -95595,11 +95598,12 @@
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
 	},
+/obj/machinery/power/apc/auto_name/west{
+	cell_type = /obj/item/stock_parts/cell/high/plus
+	},
 /obj/structure/cable/yellow{
 	icon_state = "0-4"
 	},
-/obj/effect/mapping_helpers/apc/extrapower,
-/obj/machinery/power/apc/auto_name/west,
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "odC" = (
@@ -96239,12 +96243,6 @@
 /obj/effect/turf_decal/bot,
 /turf/open/floor/plasteel/dark,
 /area/security/brig)
-"qND" = (
-/obj/structure/sign/poster/official/here_for_your_safety{
-	pixel_y = 32
-	},
-/turf/open/floor/plasteel/dark,
-/area/security/warden)
 "qOt" = (
 /obj/structure/closet/secure_closet/evidence,
 /obj/effect/turf_decal/bot,
@@ -96898,8 +96896,10 @@
 /obj/machinery/button/door{
 	id = "permaerpshutters3";
 	name = "Privacy Shutters";
+	normaldoorcontrol = 1;
 	pixel_x = 24;
-	pixel_y = 9
+	pixel_y = 9;
+	specialfunctions = 4
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
@@ -119843,7 +119843,7 @@ agX
 jYM
 cbc
 cIZ
-qND
+adn
 ech
 cIZ
 cah
