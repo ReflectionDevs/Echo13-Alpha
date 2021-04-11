@@ -661,7 +661,7 @@
 	name = "nostalgic winter coat"
 	desc = "A well-worn heavy jacket made from 'synthetic' animal furs."
 	icon_state = "old_coatwinter"
-	item_state = "old_coatwinter"
+	item_state = "coatwinter"
 
 /obj/item/clothing/head/hooded/winterhood/old
 	name = "winter hood"
@@ -671,7 +671,7 @@
 /obj/item/clothing/suit/hooded/wintercoat/security/old
 	name = "nostalgic security winter coat"
 	icon_state = "old_coatsecurity"
-	item_state = "old_coatsecurity"
+	item_state = "coatsecurity"
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/security/old
 
 /obj/item/clothing/suit/hooded/wintercoat/security/old/Initialize()
@@ -684,7 +684,7 @@
 /obj/item/clothing/suit/hooded/wintercoat/medical/old
 	name = "nostalgic medical winter coat"
 	icon_state = "old_coatmedical"
-	item_state = "old_coatmedical"
+	item_state = "coatmedical"
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical/old
 
 /obj/item/clothing/head/hooded/winterhood/medical/old
@@ -693,7 +693,7 @@
 /obj/item/clothing/suit/hooded/wintercoat/science/old
 	name = "nostalgic science winter coat"
 	icon_state = "old_coatscience"
-	item_state = "old_coatscience"
+	item_state = "coatscience"
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/science/old
 
 /obj/item/clothing/head/hooded/winterhood/science/old
@@ -702,7 +702,7 @@
 /obj/item/clothing/suit/hooded/wintercoat/engineering/old
 	name = "nostalgic engineering winter coat"
 	icon_state = "old_coatengineer"
-	item_state = "old_coatengineer"
+	item_state = "coatengineer"
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/engineering/old
 
 /obj/item/clothing/head/hooded/winterhood/engineering/old
@@ -711,7 +711,7 @@
 /obj/item/clothing/suit/hooded/wintercoat/engineering/atmos/old
 	name = "nostalgic atmospherics winter coat"
 	icon_state = "old_coatatmos"
-	item_state = "old_coatatmos"
+	item_state = "coatatmos"
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/engineering/atmos/old
 
 /obj/item/clothing/head/hooded/winterhood/engineering/atmos/old
@@ -720,7 +720,7 @@
 /obj/item/clothing/suit/hooded/wintercoat/hydro/old
 	name = "nostalgic hydroponics winter coat"
 	icon_state = "old_coathydro"
-	item_state = "old_coathydro"
+	item_state = "coathydro"
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/hydro/old
 
 /obj/item/clothing/head/hooded/winterhood/hydro/old
