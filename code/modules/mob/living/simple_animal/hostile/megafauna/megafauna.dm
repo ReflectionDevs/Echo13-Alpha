@@ -27,7 +27,6 @@
 	pull_force = MOVE_FORCE_OVERPOWERING
 	mob_size = MOB_SIZE_LARGE
 	layer = LARGE_MOB_LAYER //Looks weird with them slipping under mineral walls and cameras and shit otherwise
-	flags_1 = PREVENT_CONTENTS_EXPLOSION_1
 	mouse_opacity = MOUSE_OPACITY_OPAQUE // Easier to click on in melee, they're giant targets anyway
 	hardattacks = TRUE
 	var/list/crusher_loot
@@ -64,6 +63,9 @@
 		target = null
 		return
 	return ..()
+
+/mob/living/simple_animal/hostile/megafauna/prevent_content_explosion()
+	return TRUE
 
 /mob/living/simple_animal/hostile/megafauna/death(gibbed, var/list/force_grant)
 	if(health > 0)

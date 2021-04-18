@@ -1,5 +1,4 @@
 /obj/vehicle/sealed
-	flags_1 = PREVENT_CONTENTS_EXPLOSION_1
 	var/enter_delay = 20
 	var/mouse_pointer
 
