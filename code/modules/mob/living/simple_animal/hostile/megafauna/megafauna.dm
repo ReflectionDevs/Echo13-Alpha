@@ -65,6 +65,9 @@
 		return
 	return ..()
 
+/mob/living/simple_animal/hostile/megafauna/prevent_content_explosion()
+	return TRUE
+
 /mob/living/simple_animal/hostile/megafauna/death(gibbed, var/list/force_grant)
 	if(health > 0)
 		return
