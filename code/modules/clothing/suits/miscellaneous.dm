@@ -661,7 +661,10 @@
 	name = "nostalgic winter coat"
 	desc = "A well-worn heavy jacket made from 'synthetic' animal furs."
 	icon_state = "old_coatwinter"
+<<<<<<< HEAD
 	item_state = "coatwinter"
+=======
+>>>>>>> 918e6fc9aa (Old coats back (#4095))
 
 /obj/item/clothing/head/hooded/winterhood/old
 	name = "winter hood"
@@ -671,7 +674,10 @@
 /obj/item/clothing/suit/hooded/wintercoat/security/old
 	name = "nostalgic security winter coat"
 	icon_state = "old_coatsecurity"
+<<<<<<< HEAD
 	item_state = "coatsecurity"
+=======
+>>>>>>> 918e6fc9aa (Old coats back (#4095))
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/security/old
 
 /obj/item/clothing/suit/hooded/wintercoat/security/old/Initialize()
@@ -684,7 +690,10 @@
 /obj/item/clothing/suit/hooded/wintercoat/medical/old
 	name = "nostalgic medical winter coat"
 	icon_state = "old_coatmedical"
+<<<<<<< HEAD
 	item_state = "coatmedical"
+=======
+>>>>>>> 918e6fc9aa (Old coats back (#4095))
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/medical/old
 
 /obj/item/clothing/head/hooded/winterhood/medical/old
@@ -693,7 +702,10 @@
 /obj/item/clothing/suit/hooded/wintercoat/science/old
 	name = "nostalgic science winter coat"
 	icon_state = "old_coatscience"
+<<<<<<< HEAD
 	item_state = "coatscience"
+=======
+>>>>>>> 918e6fc9aa (Old coats back (#4095))
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/science/old
 
 /obj/item/clothing/head/hooded/winterhood/science/old
@@ -702,7 +714,10 @@
 /obj/item/clothing/suit/hooded/wintercoat/engineering/old
 	name = "nostalgic engineering winter coat"
 	icon_state = "old_coatengineer"
+<<<<<<< HEAD
 	item_state = "coatengineer"
+=======
+>>>>>>> 918e6fc9aa (Old coats back (#4095))
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/engineering/old
 
 /obj/item/clothing/head/hooded/winterhood/engineering/old
@@ -711,7 +726,10 @@
 /obj/item/clothing/suit/hooded/wintercoat/engineering/atmos/old
 	name = "nostalgic atmospherics winter coat"
 	icon_state = "old_coatatmos"
+<<<<<<< HEAD
 	item_state = "coatatmos"
+=======
+>>>>>>> 918e6fc9aa (Old coats back (#4095))
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/engineering/atmos/old
 
 /obj/item/clothing/head/hooded/winterhood/engineering/atmos/old
@@ -720,13 +738,20 @@
 /obj/item/clothing/suit/hooded/wintercoat/hydro/old
 	name = "nostalgic hydroponics winter coat"
 	icon_state = "old_coathydro"
+<<<<<<< HEAD
 	item_state = "coathydro"
+=======
+>>>>>>> 918e6fc9aa (Old coats back (#4095))
 	hoodtype = /obj/item/clothing/head/hooded/winterhood/hydro/old
 
 /obj/item/clothing/head/hooded/winterhood/hydro/old
 	icon_state = "old_winterhood_hydro"
 
+<<<<<<< HEAD
 //end of coats
+=======
+//end of winter coats
+>>>>>>> 918e6fc9aa (Old coats back (#4095))
 
 /obj/item/clothing/suit/spookyghost
 	name = "spooky ghost"
