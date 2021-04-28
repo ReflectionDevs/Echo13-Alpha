@@ -347,7 +347,50 @@
 	var/datum/component/material_container/materials = get_material_container()
 	materials.retrieve_all()
 
+<<<<<<< HEAD:code/game/machinery/fabricators/modular_fabricator.dm
 /obj/machinery/modular_fabricator/proc/AfterMaterialInsert(type_inserted, id_inserted, amount_inserted)
+=======
+/obj/machinery/autolathe/attackby(obj/item/O, mob/user, params)
+
+	if((ACCESS_SECURITY in O.GetAccess()) && !(obj_flags & EMAGGED))
+		security_interface_locked = !security_interface_locked
+		to_chat(user, "<span class='warning'>You [security_interface_locked?"lock":"unlock"] the security controls of [src].</span>")
+		return TRUE
+
+	if (busy)
+		to_chat(user, "<span class=\"alert\">The autolathe is busy. Please wait for completion of previous operation.</span>")
+		return TRUE
+
+	if(default_deconstruction_screwdriver(user, "autolathe_t", "autolathe", O))
+		return TRUE
+
+	if(default_deconstruction_crowbar(O))
+		return TRUE
+
+	if(panel_open && is_wire_tool(O))
+		wires.interact(user)
+		return TRUE
+
+	if(user.a_intent == INTENT_HARM) //so we can hit the machine
+		return ..()
+
+	if(stat)
+		return TRUE
+
+	if(istype(O, /obj/item/disk/design_disk))
+		user.visible_message("[user] loads \the [O] into \the [src]...",
+			"You load a design from \the [O]...",
+			"You hear the chatter of a floppy drive.")
+		inserted_disk = O
+		O.forceMove(src)
+		update_viewer_statics()
+		return TRUE
+
+	return ..()
+
+
+/obj/machinery/autolathe/proc/AfterMaterialInsert(type_inserted, id_inserted, amount_inserted)
+>>>>>>> 28540bd3fd (Minor autolathe fixes (#4170)):code/game/machinery/autolathe.dm
 	if(ispath(type_inserted, /obj/item/stack/ore/bluespace_crystal))
 		use_power(MINERAL_MATERIAL_AMOUNT / 10)
 	else

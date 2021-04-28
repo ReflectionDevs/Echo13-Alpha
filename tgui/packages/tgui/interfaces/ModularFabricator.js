@@ -338,6 +338,7 @@ export const ModFabData = (props, context) => {
   } = data;
   return (
     <Fragment>
+<<<<<<< HEAD
       {show_unlock_bar ? (
         <NoticeBox color={sec_interface_unlock ? "green" : "red"}>
           <Flex align="center">
@@ -368,6 +369,32 @@ export const ModFabData = (props, context) => {
           Nanotrasen Fabrication Unit V1.0.4
         </NoticeBox>
       )}
+=======
+      <NoticeBox color={sec_interface_unlock ? "green" : "red"}>
+        <Flex align="center">
+          <Flex.Item grow={1}>
+            Security protocol {hacked ? "disengaged" : "engaged"}
+            . Swipe a valid ID to unlock safety controls.
+          </Flex.Item>
+          <Flex.Item>
+            <Button
+              m={0}
+              color={sec_interface_unlock ? "green" : "red"}
+              icon={sec_interface_unlock ? "unlock" : "lock"}
+              content={hacked ? "Reactivate" : "Deactivate"}
+              onClick={() => act("toggle_safety")} />
+          </Flex.Item>
+          <Flex.Item mx={1}>
+            <Button
+              m={0}
+              color={sec_interface_unlock ? "green" : "red"}
+              icon={sec_interface_unlock ? "unlock" : "lock"}
+              content={sec_interface_unlock ? "Unlocked" : "Locked"}
+              onClick={() => act("toggle_lock")} />
+          </Flex.Item>
+        </Flex>
+      </NoticeBox>
+>>>>>>> 28540bd3fd (Minor autolathe fixes (#4170))
       <Section height="100px">
         <ModFabDataDisk />
         <Box width="150px" inline>
