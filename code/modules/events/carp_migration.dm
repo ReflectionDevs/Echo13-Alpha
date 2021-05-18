@@ -25,6 +25,10 @@
 			fish = new (C.loc)
 		else
 			fish = new /mob/living/simple_animal/hostile/carp/megacarp(C.loc)
+<<<<<<< HEAD
+=======
+
+>>>>>>> ca9965d90f (byerr (#4334))
 			fishannounce(fish) //Prefer to announce the megacarps over the regular fishies
 	fishannounce(fish)
 
