@@ -108,7 +108,13 @@
 	create_reagents(100)
 	set_colour(new_colour)
 	. = ..()
+<<<<<<< HEAD
 	set_nutrition(700)
+=======
+	set_nutrition(SLIME_DEFAULT_NUTRITION)
+	if(transformeffects & SLIME_EFFECT_LIGHT_PINK)
+		set_playable()
+>>>>>>> 651964246e (Slime fix (#4387))
 
 /mob/living/simple_animal/slime/proc/set_colour(new_colour)
 	colour = new_colour
@@ -293,7 +299,7 @@
 		attacked += 5
 		if(nutrition >= 100) //steal some nutrition. negval handled in life()
 			adjust_nutrition(-(50 + (40 * M.is_adult)))
-			M.add_nutrition(50 + (40 * M.is_adult))
+			M.add_nutrition(25 + (20 * M.is_adult))
 		if(health > 0)
 			M.adjustBruteLoss(-10 + (-10 * M.is_adult))
 			M.updatehealth()
