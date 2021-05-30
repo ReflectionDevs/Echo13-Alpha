@@ -62651,6 +62651,11 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
+/obj/structure/table/reinforced,
+/obj/item/gun/energy/e_gun/dragnet,
+/obj/item/gun/energy/e_gun/dragnet,
+/obj/item/beacon/nettingportal,
+/obj/item/gun/grenadelauncher/security,
 /turf/open/floor/plasteel,
 /area/ai_monitored/security/armory)
 "bZY" = (
