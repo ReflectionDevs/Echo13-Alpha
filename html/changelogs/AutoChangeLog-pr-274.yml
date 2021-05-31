@@ -1,4 +1,0 @@
-author: ReflectionBot
-delete-after: true
-changes:
-  - refactor: slightly refactored flash code.
