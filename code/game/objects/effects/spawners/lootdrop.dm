@@ -239,8 +239,6 @@
 		/obj/effect/decal/remains/xeno = 49,
 		/obj/effect/spawner/xeno_egg_delivery = 1)
 
-<<<<<<< HEAD
-=======
 /obj/effect/spawner/lootdrop/two_percent_xeno_egg_spawner/Initialize()
 	if(prob(40) && SSevents.holidays && SSevents.holidays[APRIL_FOOLS])
 		loot = list(/obj/effect/spawner/xeno_egg_delivery_troll = 1)
@@ -252,7 +250,6 @@
 		/mob/living/simple_animal/pet/dog/corgi = 9,
 		/mob/living/simple_animal/pet/dog/corgi/Lisa = 1)
 
->>>>>>> 09902e8d98 (Corgstation 4 (#3085))
 /obj/effect/spawner/lootdrop/sanitarium
 	name = "patient spawner"
 	loot = list(
