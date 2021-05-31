@@ -5314,7 +5314,7 @@
 "eVh" = (
 /obj/structure/closet/crate/coffin,
 /obj/effect/decal/remains/human,
-/obj/item/clothing/head/helmet/chaplain/witchunter_hat,
+/obj/item/clothing/head/chaplain/witchunter_hat,
 /turf/open/floor/plating/asteroid,
 /area/ruin/unpowered{
 	ambient_buzz = null;
