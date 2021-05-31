@@ -239,6 +239,15 @@
 		/obj/effect/decal/remains/xeno = 49,
 		/obj/effect/spawner/xeno_egg_delivery = 1)
 
+/obj/effect/spawner/lootdrop/two_percent_xeno_egg_spawner/Initialize()
+	. = ..()
+
+/obj/effect/spawner/lootdrop/ten_percent_girlfriend_spawner
+	name = "10% chance girlfriend spawner"
+	loot = list(
+		/mob/living/simple_animal/pet/dog/corgi = 9,
+		/mob/living/simple_animal/pet/dog/corgi/Lisa = 1)
+
 /obj/effect/spawner/lootdrop/sanitarium
 	name = "patient spawner"
 	loot = list(
