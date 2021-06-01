@@ -326,8 +326,6 @@
 	ex_headrevs = get_antag_minds(/datum/antagonist/rev/head, TRUE)
 	ex_revs = get_antag_minds(/datum/antagonist/rev, TRUE)
 
-<<<<<<< HEAD
-=======
 /// Checks if revs have won
 /datum/team/revolution/proc/check_rev_victory()
 	for(var/datum/objective/mutiny/objective in objectives)
@@ -423,7 +421,6 @@
 		SSticker.mode_result = "loss - rev heads killed"
 		SSticker.news_report = REVS_LOSE
 
->>>>>>> 51373b362f (Ports station traits (#3842))
 /datum/team/revolution/roundend_report()
 	if(!members.len && !ex_headrevs.len)
 		return
