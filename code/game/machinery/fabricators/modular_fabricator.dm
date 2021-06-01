@@ -190,7 +190,7 @@
 	var/datum/component/material_container/materials = get_material_container()
 	for(var/material in materials.materials)
 		var/datum/material/M = material
-		var/mineral_amount = materials.materials[material]
+		var/mineral_amount = materials.materials[material] / MINERAL_MATERIAL_AMOUNT
 		data["materials"] += list(list(
 			"name" = M.name,
 			"amount" = mineral_amount,
@@ -294,7 +294,7 @@
 	for(var/obj/machinery/computer/rdconsole/RDC in orange(7, src))
 		RDC.stored_research.copy_research_to(stored_research)
 		update_static_data(usr)
-		say("Successfully synchoronized with R&D server.")
+		say("Successfully synchronized with R&D server.")
 		return
 
 /obj/machinery/modular_fabricator/proc/update_viewer_statics()
@@ -347,50 +347,7 @@
 	var/datum/component/material_container/materials = get_material_container()
 	materials.retrieve_all()
 
-<<<<<<< HEAD:code/game/machinery/autolathe.dm
-/obj/machinery/autolathe/attackby(obj/item/O, mob/user, params)
-
-	if(ACCESS_SECURITY in O.GetAccess() && !(obj_flags & EMAGGED))
-		security_interface_locked = !security_interface_locked
-		to_chat(user, "<span class='warning'>You [security_interface_locked?"lock":"unlock"] the security controls of [src].</span>")
-		return TRUE
-
-	if (busy)
-		to_chat(user, "<span class=\"alert\">The autolathe is busy. Please wait for completion of previous operation.</span>")
-		return TRUE
-
-	if(default_deconstruction_screwdriver(user, "autolathe_t", "autolathe", O))
-		return TRUE
-
-	if(default_deconstruction_crowbar(O))
-		return TRUE
-
-	if(panel_open && is_wire_tool(O))
-		wires.interact(user)
-		return TRUE
-
-	if(user.a_intent == INTENT_HARM) //so we can hit the machine
-		return ..()
-
-	if(stat)
-		return TRUE
-
-	if(istype(O, /obj/item/disk/design_disk))
-		user.visible_message("[user] loads \the [O] into \the [src]...",
-			"You load a design from \the [O]...",
-			"You hear the chatter of a floppy drive.")
-		inserted_disk = O
-		O.forceMove(src)
-		update_viewer_statics()
-		return TRUE
-
-	return ..()
-
-
-/obj/machinery/autolathe/proc/AfterMaterialInsert(type_inserted, id_inserted, amount_inserted)
-=======
 /obj/machinery/modular_fabricator/proc/AfterMaterialInsert(type_inserted, id_inserted, amount_inserted)
->>>>>>> 2c9cefb741 (Modular fabricator interface for exosuit fabs. (#4210)):code/game/machinery/fabricators/modular_fabricator.dm
 	if(ispath(type_inserted, /obj/item/stack/ore/bluespace_crystal))
 		use_power(MINERAL_MATERIAL_AMOUNT / 10)
 	else
