@@ -371,6 +371,8 @@
 	blocking_rules = list(/datum/dynamic_ruleset/latejoin/provocateur)
 	// I give up, just there should be enough heads with 35 players...
 	minimum_players = 35
+	/// How much threat should be injected when the revolution wins?
+	var/revs_win_threat_injection = 20
 	var/datum/team/revolution/revolution
 	var/finished = FALSE
 
@@ -401,7 +403,7 @@
 	if(revolution.members.len)
 		revolution.update_objectives()
 		revolution.update_heads()
-		SSshuttle.registerHostileEnvironment(src)
+		SSshuttle.registerHostileEnvironment(revolution)
 		return TRUE
 	log_game("DYNAMIC: [ruletype] [name] failed to get any eligible headrevs. Refunding [cost] threat.")
 	return FALSE
@@ -411,8 +413,8 @@
 	..()
 
 /datum/dynamic_ruleset/roundstart/revs/rule_process()
-	if(!revolution)
-		log_game("DYNAMIC: Something went horrifically wrong with [name] - and the antag datum could not be created. Notify coders.")
+	var/winner = revolution.process_victory(revs_win_threat_injection)
+	if (isnull(winner))
 		return
 	finished = winner
 	return RULESET_STOP_PROCESSING
@@ -424,33 +426,8 @@
 		return TRUE
 	return FALSE
 
-/datum/dynamic_ruleset/roundstart/revs/check_finished()
-	if(finished == REVOLUTION_VICTORY)
-		return TRUE
-	else
-		return ..()
-
-/datum/dynamic_ruleset/roundstart/revs/proc/check_rev_victory()
-	for(var/datum/objective/mutiny/objective in revolution.objectives)
-		if(!(objective.check_completion()))
-			return FALSE
-	return TRUE
-
-/datum/dynamic_ruleset/roundstart/revs/proc/check_heads_victory()
-	for(var/datum/mind/rev_mind in revolution.head_revolutionaries())
-		var/turf/T = get_turf(rev_mind.current)
-		if(!considered_afk(rev_mind) && considered_alive(rev_mind) && is_station_level(T.z))
-			if(ishuman(rev_mind.current) || ismonkey(rev_mind.current))
-				return FALSE
-	return TRUE
-
 /datum/dynamic_ruleset/roundstart/revs/round_result()
-	if(finished == REVOLUTION_VICTORY)
-		SSticker.mode_result = "win - heads killed"
-		SSticker.news_report = REVS_WIN
-	else if(finished == STATION_VICTORY)
-		SSticker.mode_result = "loss - rev heads killed"
-		SSticker.news_report = REVS_LOSE
+	revolution.round_result(finished)
 
 // Admin only rulesets. The threat requirement is 101 so it is not possible to roll them.
 
