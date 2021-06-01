@@ -553,7 +553,7 @@
 /turf/open/floor/plasteel/showroomfloor,
 /area/awaymission/academy/headmaster)
 "bU" = (
-/obj/machinery/autolathe,
+/obj/machinery/modular_fabricator,
 /obj/structure/cable{
 	icon_state = "0-2"
 	},
@@ -3669,8 +3669,8 @@
 /area/awaymission/academy/academygate)
 "kw" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows";
-	dir = 8
+	dir = 8;
+	icon_state = "fakewindows"
 	},
 /area/awaymission/academy/headmaster)
 "kx" = (
@@ -3726,8 +3726,8 @@
 /area/awaymission/academy/academyaft)
 "kF" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows2";
-	dir = 8
+	dir = 8;
+	icon_state = "fakewindows2"
 	},
 /area/awaymission/academy/headmaster)
 "kG" = (
@@ -4331,8 +4331,8 @@
 /area/awaymission/academy/academycellar)
 "mW" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows";
-	dir = 4
+	dir = 4;
+	icon_state = "fakewindows"
 	},
 /area/awaymission/academy/headmaster)
 "mX" = (
@@ -4345,14 +4345,14 @@
 /area/space/nearstation)
 "mZ" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows";
-	dir = 1
+	dir = 1;
+	icon_state = "fakewindows"
 	},
 /area/awaymission/academy/headmaster)
 "na" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows2";
-	dir = 1
+	dir = 1;
+	icon_state = "fakewindows2"
 	},
 /area/awaymission/academy/headmaster)
 "nb" = (
@@ -4371,38 +4371,38 @@
 /area/awaymission/academy/headmaster)
 "nd" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows";
-	dir = 1
+	dir = 1;
+	icon_state = "fakewindows"
 	},
 /area/awaymission/academy/academyengine)
 "ne" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows2";
-	dir = 1
+	dir = 1;
+	icon_state = "fakewindows2"
 	},
 /area/awaymission/academy/academyengine)
 "nf" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows2";
-	dir = 6
+	dir = 6;
+	icon_state = "fakewindows2"
 	},
 /area/awaymission/academy/headmaster)
 "ng" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows";
-	dir = 8
+	dir = 8;
+	icon_state = "fakewindows"
 	},
 /area/awaymission/academy/academyengine)
 "nh" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows2";
-	dir = 8
+	dir = 8;
+	icon_state = "fakewindows2"
 	},
 /area/awaymission/academy/academyengine)
 "ni" = (
 /turf/closed/indestructible/fakeglass{
-	icon_state = "fakewindows";
-	dir = 4
+	dir = 4;
+	icon_state = "fakewindows"
 	},
 /area/awaymission/academy/academyengine)
 "nj" = (
