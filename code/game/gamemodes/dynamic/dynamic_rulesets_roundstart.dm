@@ -414,32 +414,8 @@
 	if(!revolution)
 		log_game("DYNAMIC: Something went horrifically wrong with [name] - and the antag datum could not be created. Notify coders.")
 		return
-<<<<<<< HEAD
-	if(check_rev_victory())
-		finished = REVOLUTION_VICTORY
-		return RULESET_STOP_PROCESSING
-	else if (check_heads_victory())
-		finished = STATION_VICTORY
-		SSshuttle.clearHostileEnvironment(src)
-		revolution.save_members()
-		for(var/datum/mind/M in revolution.members)	// Remove antag datums and prevents podcloned or exiled headrevs restarting rebellions.
-			if(M.has_antag_datum(/datum/antagonist/rev/head))
-				var/datum/antagonist/rev/head/R = M.has_antag_datum(/datum/antagonist/rev/head)
-				R.remove_revolutionary(FALSE, "gamemode")
-				if(M.current)
-					var/mob/living/carbon/C = M.current
-					if(istype(C) && C.stat == DEAD)
-						C.makeUncloneable()
-			if(M.has_antag_datum(/datum/antagonist/rev))
-				var/datum/antagonist/rev/R = M.has_antag_datum(/datum/antagonist/rev)
-				R.remove_revolutionary(FALSE, "gamemode")
-		priority_announce("It appears the mutiny has been quelled. Please return yourself and your incapacitated colleagues to work. \
-			We have remotely blacklisted the head revolutionaries in your medical records to prevent accidental revival.", null, 'sound/ai/attention.ogg', null, "Central Command Loyalty Monitoring Division")
-		return RULESET_STOP_PROCESSING
-=======
 	finished = winner
 	return RULESET_STOP_PROCESSING
->>>>>>> 51373b362f (Ports station traits (#3842))
 
 /// Checks for revhead loss conditions and other antag datums.
 /datum/dynamic_ruleset/roundstart/revs/proc/check_eligible(var/datum/mind/M)
