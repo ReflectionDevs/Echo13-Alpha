@@ -370,8 +370,6 @@ BLIND     // can't see anything
 		deconstruct(FALSE)
 	else
 		..()
-<<<<<<< HEAD
-=======
 
 /obj/item/clothing/get_armor_rating(d_type, mob/wearer)
 	. = ..()
@@ -388,4 +386,3 @@ BLIND     // can't see anything
 #undef SENSORS_VITALS
 #undef SENSORS_TRACKING
 #undef SENSOR_CHANGE_DELAY
->>>>>>> 5608b2e19e (Suit sensors can now be adjusted through the strip menu (#3912))
