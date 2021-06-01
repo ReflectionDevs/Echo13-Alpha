@@ -50234,13 +50234,10 @@
 /turf/open/floor/plasteel/dark,
 /area/security/warden)
 "bHL" = (
-<<<<<<< HEAD
 /obj/structure/cable/yellow{
 	icon_state = "0-8"
 	},
 /obj/effect/spawner/structure/window/reinforced,
-/turf/open/floor/plating,
-=======
 /obj/effect/turf_decal/tile/red{
 	dir = 1
 	},
@@ -50250,8 +50247,8 @@
 	},
 /mob/living/simple_animal/pet/dog/bullterrier/walter,
 /obj/structure/bed/dogbed/walter,
+/turf/open/floor/plating,
 /turf/open/floor/plasteel,
->>>>>>> 60504f21de (Prevents a military coup (#4187))
 /area/security/warden)
 "bHM" = (
 /obj/structure/table/reinforced,
