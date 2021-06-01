@@ -1,0 +1,4 @@
+author: ReflectionBot
+delete-after: true
+changes:
+  - bugfix: mining borg cutter upgrade can be applied again
