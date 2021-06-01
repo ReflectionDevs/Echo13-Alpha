@@ -370,8 +370,6 @@
 #define SLEEP_CHECK_DEATH(X) sleep(X); if(QDELETED(src) || stat == DEAD) return;
 
 #define SILENCE_RANGED_MESSAGE (1<<0)
-<<<<<<< HEAD
-=======
 
 /// Glide speed of carbons in soft crit
 #define CRIT_GLIDE 2
@@ -387,4 +385,3 @@
 #define FLAVOR_TEXT_GOOD "good"	//ie do not cause evil
 #define FLAVOR_TEXT_NONE "none"
 #define FLAVOR_TEXT_GOAL_ANTAG "blob"	//is antag, but should work towards its goals
->>>>>>> 4af7df868d (Reworks Soft Crit (#2997))

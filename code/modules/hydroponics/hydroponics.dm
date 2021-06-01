@@ -380,7 +380,8 @@
 			myseed = new /obj/item/seeds/plump(src)
 		else
 			myseed = new /obj/item/seeds/starthistle(src)
-	age = 0
+	age = 1
+	lastproduce = 1
 	plant_health = myseed.endurance
 	lastcycle = world.time
 	harvest = 0
@@ -594,7 +595,7 @@
 		adjustHealth(round(S.get_reagent_amount(/datum/reagent/consumable/sodawater) * 0.1))
 		adjustNutri(round(S.get_reagent_amount(/datum/reagent/consumable/sodawater) * 0.1))
 
-	// Man, you guys are retards
+	// Man, you guys are stupid
 	if(S.has_reagent(/datum/reagent/toxin/acid, 1))
 		adjustHealth(-round(S.get_reagent_amount(/datum/reagent/toxin/acid) * 1))
 		adjustToxic(round(S.get_reagent_amount(/datum/reagent/toxin/acid) * 1.5))
@@ -786,6 +787,7 @@
 			myseed = O
 			update_name()
 			age = 1
+			lastproduce = 1
 			plant_health = myseed.endurance
 			lastcycle = world.time
 			update_icon()
@@ -876,7 +878,7 @@
 	if(issilicon(user)) //How does AI know what plant is?
 		return
 	harvest_plant(user)
-		
+
 /obj/machinery/hydroponics/proc/harvest_plant(mob/user)
 	if(harvest)
 		return myseed.harvest(user)
@@ -906,6 +908,8 @@
 		myseed = null
 		update_name()
 		dead = 0
+		age = 0
+		lastproduce = 0
 	update_icon()
 
 /// Tray Setters - The following procs adjust the tray or plants variables, and make sure that the stat doesn't go out of bounds.///
