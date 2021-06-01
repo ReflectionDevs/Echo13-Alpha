@@ -1,4 +1,0 @@
-author: ReflectionBot
-delete-after: true
-changes:
-  - code_imp: Justifies LAZYLEN()

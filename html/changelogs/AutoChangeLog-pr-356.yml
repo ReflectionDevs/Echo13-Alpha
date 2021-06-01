@@ -1,5 +1,0 @@
-author: ReflectionBot
-delete-after: true
-changes:
-  - tweak: gas miners on maps are no longer in space ruin mode and actively consume
-      power
