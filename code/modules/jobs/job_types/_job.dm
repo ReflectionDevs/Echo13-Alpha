@@ -67,8 +67,6 @@
 
 	var/gimmick = FALSE //least hacky way i could think of for this
 
-<<<<<<< HEAD
-=======
 	///Bitfield of departments this job belongs wit
 	var/departments = NONE
 	///Is this job affected by weird spawns like the ones from station traits
@@ -76,7 +74,6 @@
 	/// Should this job be allowed to be picked for the bureaucratic error event?
 	var/allow_bureaucratic_error = TRUE
 
->>>>>>> 51373b362f (Ports station traits (#3842))
 /datum/job/New()
 	. = ..()
 	say_span = replacetext(lowertext(title), " ", "")
