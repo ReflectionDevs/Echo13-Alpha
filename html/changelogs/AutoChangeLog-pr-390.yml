@@ -1,4 +1,0 @@
-author: ReflectionBot
-delete-after: true
-changes:
-  - server: The discord webhook handler's URL can be configured now
