@@ -1,0 +1,4 @@
+author: ReflectionBot
+delete-after: true
+changes:
+  - admin: admins can ban from heretic
