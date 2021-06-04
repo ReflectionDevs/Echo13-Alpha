@@ -3559,31 +3559,74 @@
 /turf/closed/wall,
 /area/hallway/primary/fore)
 "agp" = (
-/obj/structure/rack,
-/obj/item/storage/toolbox/emergency{
-	pixel_y = 5
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
 	},
-/obj/item/stack/cable_coil,
-/obj/item/wirecutters,
-/obj/effect/turf_decal/bot,
-/obj/effect/turf_decal/tile/neutral,
-/obj/machinery/airalarm{
-	dir = 4;
-	pixel_x = -22
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
 	},
-/obj/structure/extinguisher_cabinet{
-	pixel_y = 28
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
 	},
-/obj/machinery/camera{
-	c_tag = "Recreation VR Sleepers";
-	name = "recreation camera"
-	},
-/obj/effect/decal/cleanable/cobweb,
-/obj/machinery/light{
-	dir = 1
-	},
+<<<<<<< HEAD
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness/recreation)
+=======
+/turf/open/floor/plating,
+/area/maintenance/port)
+"agq" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/delivery,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/window/brigdoor/northright{
+	id = "Cell 6";
+	name = "Cell 6";
+	req_access_txt = "1"
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/security/warden)
+"agr" = (
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/machinery/atmospherics/components/unary/vent_pump/on{
+	dir = 8
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/warden)
+"ags" = (
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/red{
+	dir = 1
+	},
+/obj/effect/turf_decal/delivery,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
+/obj/machinery/door/window/brigdoor/northright{
+	id = "Cell 5";
+	name = "Cell 5";
+	req_access_txt = "1"
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/security/warden)
+>>>>>>> bdeb23a0d9 (Ports tg's Holodeck rework (#4333))
 "agt" = (
 /turf/closed/wall/rust,
 /area/space/nearstation)
@@ -4429,13 +4472,13 @@
 	},
 /area/maintenance/port/fore)
 "ahV" = (
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 8
+/obj/effect/turf_decal/bot,
+/obj/structure/closet/crate{
+	opened = 1
 	},
-/obj/effect/turf_decal/stripes/corner,
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness/recreation)
+/obj/item/stock_parts/capacitor,
+/turf/open/floor/plating,
+/area/maintenance/port)
 "ahW" = (
 /obj/effect/turf_decal/delivery,
 /obj/machinery/door/airlock/security/glass{
@@ -22865,13 +22908,10 @@
 /area/science/mixing)
 "aLf" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/structure/table,
-/obj/item/poster/random_official{
-	pixel_x = 6;
-	pixel_y = 6
-	},
-/obj/item/poster/random_official,
-/obj/effect/turf_decal/stripes/corner,
+/obj/effect/turf_decal/bot,
+/obj/structure/rack,
+/obj/item/stack/packageWrap,
+/obj/item/storage/box,
 /turf/open/floor/plating,
 /area/maintenance/port)
 "aLg" = (
@@ -37822,13 +37862,6 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/science/xenobiology)
-"bfL" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/maintenance/port)
 "bfM" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -49408,30 +49441,16 @@
 "bwe" = (
 /turf/closed/wall/r_wall/rust,
 /area/science/xenobiology)
-"bwf" = (
-/obj/effect/turf_decal/bot,
-/obj/structure/closet/crate{
-	opened = 1
-	},
-/obj/item/stock_parts/capacitor,
-/obj/effect/turf_decal/stripes/corner{
-	dir = 8
-	},
-/turf/open/floor/plating,
-/area/maintenance/port)
-"bwg" = (
-/obj/effect/turf_decal/bot,
-/obj/structure/closet,
-/obj/item/stack/rods/ten,
-/obj/item/stock_parts/matter_bin,
-/turf/open/floor/plating,
-/area/maintenance/port)
 "bwh" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 5
+	},
 /obj/structure/cable/yellow{
-	icon_state = "1-2"
+	icon_state = "1-4"
 	},
 /turf/open/floor/plating,
 /area/maintenance/port)
@@ -50343,19 +50362,6 @@
 	dir = 4
 	},
 /area/chapel/main)
-"bxQ" = (
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
-/obj/structure/chair/stool/bar{
-	pixel_x = -8
-	},
-/turf/open/floor/plasteel,
-/area/crew_quarters/fitness/recreation)
 "bxR" = (
 /obj/effect/turf_decal/bot,
 /obj/effect/turf_decal/tile/neutral,
@@ -50626,15 +50632,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
-"bym" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
-	},
-/area/maintenance/port)
 "byn" = (
 /obj/structure/table/glass,
 /obj/effect/turf_decal/stripes/line{
@@ -50934,18 +50931,18 @@
 /turf/open/floor/plasteel/dark,
 /area/ai_monitored/security/armory)
 "byB" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 6
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 6
-	},
 /obj/effect/turf_decal/stripes/line{
 	dir = 4
 	},
 /obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
 /obj/structure/cable/yellow{
-	icon_state = "2-4"
+	icon_state = "4-8"
 	},
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
@@ -51114,15 +51111,6 @@
 	luminosity = 2
 	},
 /area/ai_monitored/turret_protected/ai_upload)
-"byO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/maintenance/port)
 "byP" = (
 /obj/machinery/holopad,
 /obj/effect/turf_decal/bot,
@@ -52116,6 +52104,7 @@
 /obj/effect/decal/cleanable/insectguts,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/central)
+<<<<<<< HEAD
 "bAq" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/bot,
@@ -52124,6 +52113,29 @@
 /obj/item/storage/box,
 /turf/open/floor/plating,
 /area/maintenance/port)
+=======
+"bAr" = (
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 9
+	},
+/obj/item/twohanded/required/kirbyplants{
+	icon_state = "plant-02";
+	pixel_y = 3
+	},
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 8
+	},
+/turf/open/floor/plasteel/showroomfloor,
+/area/security/brig)
+>>>>>>> bdeb23a0d9 (Ports tg's Holodeck rework (#4333))
 "bAs" = (
 /obj/structure/table/glass,
 /obj/item/storage/box/beakers{
@@ -52372,31 +52384,18 @@
 /turf/open/floor/plasteel,
 /area/crew_quarters/locker)
 "bAM" = (
-/obj/machinery/door/airlock/maintenance{
-	req_access_txt = "12";
-	req_one_access_txt = "0"
+/obj/effect/decal/cleanable/dirt,
+/obj/structure/table,
+/obj/item/poster/random_official{
+	pixel_x = 6;
+	pixel_y = 6
 	},
-/obj/effect/mapping_helpers/airlock/abandoned,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
+/obj/item/poster/random_official,
+/turf/open/floor/plating,
 /area/maintenance/port)
 "bAN" = (
 /turf/closed/wall,
 /area/medical/virology)
-"bAO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 8
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/maintenance/port)
 "bAP" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/red{
@@ -52991,21 +52990,6 @@
 /obj/effect/decal/cleanable/blood/gibs/limb,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
-/area/maintenance/port)
-"bBI" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 5
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 5
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
 /area/maintenance/port)
 "bBJ" = (
 /obj/effect/turf_decal/tile/blue{
@@ -54156,9 +54140,6 @@
 	},
 /obj/structure/cable/yellow{
 	icon_state = "1-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
 	},
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
@@ -56441,12 +56422,10 @@
 /turf/open/floor/plasteel,
 /area/engine/break_room)
 "bGN" = (
-/obj/effect/turf_decal/delivery,
-/obj/structure/reagent_dispensers/fueltank,
-/obj/effect/decal/cleanable/cobweb,
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
+/obj/effect/turf_decal/bot,
+/obj/structure/rack,
+/obj/item/storage/backpack/satchel/eng,
+/obj/item/wirecutters,
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bGP" = (
@@ -56669,6 +56648,7 @@
 	},
 /turf/open/floor/plasteel,
 /area/hallway/primary/starboard)
+<<<<<<< HEAD
 "bHg" = (
 /obj/effect/turf_decal/tile/neutral,
 /obj/effect/turf_decal/tile/neutral{
@@ -56677,6 +56657,23 @@
 /obj/machinery/computer/arcade,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness/recreation)
+=======
+"bHh" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/turf/open/floor/plasteel/dark/corner{
+	dir = 8
+	},
+/area/hallway/primary/port)
+>>>>>>> bdeb23a0d9 (Ports tg's Holodeck rework (#4333))
 "bHi" = (
 /obj/effect/turf_decal/stripes/corner,
 /obj/effect/decal/cleanable/dirt,
@@ -57658,6 +57655,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/quartermaster/storage)
+<<<<<<< HEAD
 "bIR" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/blue{
@@ -57672,6 +57670,24 @@
 	},
 /turf/open/floor/plasteel,
 /area/crew_quarters/fitness/recreation)
+=======
+"bIS" = (
+/obj/item/grenade/barrier{
+	pixel_x = 4
+	},
+/obj/item/grenade/barrier,
+/obj/item/grenade/barrier{
+	pixel_x = -4
+	},
+/obj/structure/table,
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/item/key/security,
+/obj/item/key/security,
+/turf/open/floor/plasteel/dark,
+/area/ai_monitored/security/armory)
+>>>>>>> bdeb23a0d9 (Ports tg's Holodeck rework (#4333))
 "bIT" = (
 /obj/machinery/light,
 /turf/open/floor/plasteel/freezer,
@@ -57823,10 +57839,6 @@
 /turf/open/floor/plasteel,
 /area/bridge)
 "bJg" = (
-/obj/effect/turf_decal/bot,
-/obj/structure/rack,
-/obj/item/storage/backpack/satchel/eng,
-/obj/item/wirecutters,
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
 	},
@@ -58284,16 +58296,6 @@
 /obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/locker)
-"bJM" = (
-/obj/effect/turf_decal/stripes/line,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/maintenance/port)
 "bJN" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
@@ -58412,15 +58414,6 @@
 /turf/open/floor/plating{
 	icon_state = "platingdmg3"
 	},
-/area/maintenance/port/aft)
-"bJW" = (
-/obj/effect/turf_decal/delivery,
-/obj/machinery/space_heater,
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating,
 /area/maintenance/port/aft)
 "bJX" = (
 /obj/effect/turf_decal/delivery,
@@ -59085,30 +59078,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel,
 /area/security/courtroom)
-"bLh" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
-	},
-/turf/open/floor/plating,
-/area/maintenance/port/aft)
-"bLi" = (
-/obj/effect/turf_decal/tile/red,
-/obj/effect/turf_decal/tile/blue{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/corner,
-/obj/structure/chair/stool/bar{
-	pixel_x = -8
-	},
-/turf/open/floor/plasteel,
-/area/crew_quarters/fitness/recreation)
 "bLj" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
@@ -59199,6 +59168,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/crew_quarters/fitness/recreation)
+<<<<<<< HEAD
 "bLq" = (
 /obj/effect/turf_decal/tile/red,
 /obj/effect/turf_decal/tile/blue{
@@ -59225,6 +59195,24 @@
 	},
 /turf/open/floor/plating,
 /area/crew_quarters/fitness/recreation)
+=======
+"bLs" = (
+/obj/effect/turf_decal/stripes/line{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 9
+	},
+/obj/effect/decal/cleanable/blood/old,
+/turf/open/floor/plasteel/dark,
+/area/security/warden)
+>>>>>>> bdeb23a0d9 (Ports tg's Holodeck rework (#4333))
 "bLt" = (
 /obj/structure/table,
 /obj/effect/turf_decal/stripes/corner{
@@ -59266,16 +59254,6 @@
 "bLu" = (
 /turf/closed/wall/rust,
 /area/crew_quarters/locker)
-"bLv" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/effect/turf_decal/stripes/corner{
-	dir = 1
-	},
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/maintenance/port/aft)
 "bLw" = (
 /obj/structure/pool_ladder,
 /turf/open/indestructible/sound/pool,
@@ -59398,16 +59376,6 @@
 /obj/effect/turf_decal/pool,
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/fitness/recreation)
-"bLP" = (
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating,
-/area/maintenance/port/aft)
 "bLQ" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 1
@@ -59448,16 +59416,6 @@
 /obj/machinery/atmospherics/pipe/manifold/scrubbers/hidden/layer1,
 /turf/open/floor/plasteel,
 /area/hallway/primary/central)
-"bLT" = (
-/obj/effect/turf_decal/stripes/line{
-	dir = 1
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "2-8"
-	},
-/turf/open/floor/plating,
-/area/maintenance/port/aft)
 "bLU" = (
 /obj/structure/sign/warning/fire,
 /turf/closed/wall/rust,
@@ -59588,14 +59546,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/security/prison)
-"bMf" = (
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/maintenance/port/aft)
 "bMg" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -59618,16 +59568,6 @@
 	},
 /turf/open/floor/plasteel/showroomfloor,
 /area/crew_quarters/fitness/recreation)
-"bMh" = (
-/obj/effect/turf_decal/stripes/corner,
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/maintenance/port/aft)
 "bMi" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
@@ -59729,27 +59669,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/teleporter)
-"bMq" = (
-/obj/structure/table,
-/obj/machinery/cell_charger,
-/obj/item/stock_parts/cell/high,
-/obj/item/screwdriver{
-	pixel_y = 18
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/item/radio/intercom{
-	pixel_y = -28
-	},
-/obj/machinery/firealarm{
-	dir = 4;
-	pixel_x = -26
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light,
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness/recreation)
 "bMr" = (
 /obj/effect/turf_decal/tile/blue{
 	dir = 8
@@ -59798,18 +59717,6 @@
 	dir = 1
 	},
 /area/hallway/primary/central)
-"bMt" = (
-/obj/effect/turf_decal/tile/neutral{
-	dir = 1
-	},
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness/recreation)
 "bMu" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "12";
@@ -76336,6 +76243,7 @@
 	icon_state = "platingdmg3"
 	},
 /area/maintenance/aft)
+<<<<<<< HEAD
 "cnJ" = (
 /obj/machinery/door/airlock/maintenance{
 	req_access_txt = "12";
@@ -76343,6 +76251,19 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port)
+=======
+"cnI" = (
+/obj/effect/turf_decal/tile/red,
+/obj/effect/turf_decal/tile/red{
+	dir = 4
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/structure/cable/yellow{
+	icon_state = "1-2"
+	},
+/turf/open/floor/plasteel,
+/area/security/main)
+>>>>>>> bdeb23a0d9 (Ports tg's Holodeck rework (#4333))
 "cnK" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 4
@@ -78616,21 +78537,6 @@
 	},
 /turf/open/floor/plasteel,
 /area/engine/atmos)
-"crV" = (
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 4
-	},
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
-	dir = 8
-	},
-/obj/effect/decal/cleanable/dirt,
-/obj/structure/cable/yellow{
-	icon_state = "4-8"
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg3"
-	},
-/area/maintenance/port)
 "crW" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/turf_decal/stripes/line,
@@ -79256,6 +79162,7 @@
 "csT" = (
 /obj/effect/decal/cleanable/cobweb,
 /obj/effect/decal/cleanable/dirt,
+/obj/structure/reagent_dispensers/fueltank,
 /turf/open/floor/plating,
 /area/maintenance/port)
 "csU" = (
@@ -79393,16 +79300,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/maintenance/port/fore)
-"ctj" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden{
-	dir = 10
-	},
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/open/floor/plating,
-/area/maintenance/port)
 "ctk" = (
 /obj/effect/turf_decal/tile/neutral{
 	dir = 1
@@ -79424,14 +79321,6 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/dark,
 /area/engine/atmos)
-"ctl" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/components/unary/vent_pump/on{
-	dir = 1
-	},
-/obj/effect/landmark/xeno_spawn,
-/turf/open/floor/plating,
-/area/maintenance/port)
 "ctm" = (
 /obj/effect/turf_decal/tile/yellow{
 	dir = 1
@@ -80058,6 +79947,7 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/engine/atmos)
+<<<<<<< HEAD
 "cuu" = (
 /obj/machinery/atmospherics/pipe/simple/supply/hidden{
 	dir = 9
@@ -80076,6 +79966,26 @@
 	icon_state = "platingdmg1"
 	},
 /area/maintenance/port)
+=======
+"cuv" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 1
+	},
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/obj/effect/turf_decal/stripes/line{
+	dir = 4
+	},
+/turf/open/floor/plasteel/dark,
+/area/security/brig)
+>>>>>>> bdeb23a0d9 (Ports tg's Holodeck rework (#4333))
 "cuw" = (
 /obj/effect/turf_decal/stripes/corner{
 	dir = 8
@@ -80097,7 +80007,6 @@
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
 	},
-/obj/effect/turf_decal/stripes/corner,
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/manifold/supply/hidden{
 	dir = 4
@@ -80112,17 +80021,12 @@
 /obj/effect/turf_decal/stripes/corner{
 	dir = 1
 	},
-/obj/effect/turf_decal/stripes/line{
-	dir = 4
-	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
-/obj/machinery/atmospherics/pipe/manifold/supply/hidden{
-	dir = 8
-	},
 /obj/structure/cable/yellow{
 	icon_state = "1-2"
 	},
+/obj/machinery/atmospherics/pipe/simple/supply/hidden,
 /turf/open/floor/plating{
 	icon_state = "panelscorched"
 	},
@@ -80196,13 +80100,6 @@
 	},
 /turf/open/floor/engine,
 /area/engine/engineering)
-"cuD" = (
-/obj/effect/turf_decal/stripes/corner,
-/obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plating{
-	icon_state = "panelscorched"
-	},
-/area/maintenance/port)
 "cuE" = (
 /obj/effect/turf_decal/tile/red{
 	dir = 8
@@ -80271,11 +80168,30 @@
 	},
 /turf/open/floor/plasteel/dark,
 /area/medical/virology)
+<<<<<<< HEAD
 "cuI" = (
 /obj/effect/turf_decal/stripes/line,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plating,
 /area/maintenance/port)
+=======
+"cuJ" = (
+/obj/effect/turf_decal/tile/neutral{
+	dir = 8
+	},
+/obj/effect/turf_decal/tile/neutral,
+/obj/effect/turf_decal/stripes/corner{
+	dir = 4
+	},
+/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
+	dir = 8
+	},
+/obj/structure/cable/yellow{
+	icon_state = "4-8"
+	},
+/turf/open/floor/plasteel/dark,
+/area/crew_quarters/heads/hos)
+>>>>>>> bdeb23a0d9 (Ports tg's Holodeck rework (#4333))
 "cuK" = (
 /obj/structure/disposalpipe/trunk{
 	dir = 1
@@ -88257,17 +88173,6 @@
 	},
 /turf/open/floor/carpet/royalblue,
 /area/crew_quarters/heads/captain)
-"cIy" = (
-/obj/effect/turf_decal/tile/neutral,
-/obj/effect/turf_decal/tile/neutral{
-	dir = 4
-	},
-/obj/machinery/computer/arcade,
-/obj/machinery/newscaster{
-	pixel_x = -30
-	},
-/turf/open/floor/plasteel/dark,
-/area/crew_quarters/fitness/recreation)
 "cIz" = (
 /obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1{
 	dir = 10
@@ -90099,20 +90004,6 @@
 	luminosity = 2
 	},
 /area/engine/supermatter)
-"cLO" = (
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/atmospherics/pipe/simple/supply/hidden,
-/obj/machinery/atmospherics/pipe/simple/scrubbers/hidden/layer1,
-/obj/effect/turf_decal/stripes/corner{
-	dir = 4
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
-	},
-/turf/open/floor/plating{
-	icon_state = "platingdmg1"
-	},
-/area/maintenance/port)
 "cLP" = (
 /obj/effect/turf_decal/stripes/line{
 	dir = 8
@@ -90170,10 +90061,7 @@
 	dir = 10
 	},
 /obj/structure/cable/yellow{
-	icon_state = "1-8"
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-2"
+	icon_state = "2-8"
 	},
 /turf/open/floor/plating,
 /area/maintenance/port/aft)
@@ -90190,9 +90078,6 @@
 	},
 /obj/structure/disposalpipe/segment{
 	dir = 6
-	},
-/obj/structure/cable/yellow{
-	icon_state = "1-4"
 	},
 /obj/structure/cable/yellow{
 	icon_state = "2-4"
@@ -111102,7 +110987,7 @@ bAI
 cuw
 cux
 cuy
-cLO
+cLI
 cLI
 bDo
 ajd
@@ -111361,7 +111246,7 @@ amA
 bAM
 amR
 cpX
-bfL
+crP
 ajd
 aer
 ajd
@@ -111613,13 +111498,13 @@ blo
 amA
 amA
 cpX
-amA
-bwf
-bAO
-amA
-amA
-bfL
-bAq
+ahV
+crP
+cIc
+crP
+crP
+crP
+crP
 aLf
 aer
 bGN
@@ -111869,18 +111754,18 @@ azg
 blq
 boM
 bpc
-crQ
-amR
-bwg
-ctj
-ctl
-amR
-bym
-byO
-bJM
-bJJ
-bLh
-bMf
+awD
+awD
+awD
+awD
+awD
+awD
+awD
+awD
+awD
+awD
+awD
+awD
 cLR
 bOW
 bQv
@@ -112126,19 +112011,19 @@ biP
 blw
 bsW
 bwh
-bBI
-amA
-awD
-aSL
-awD
-awD
-aSL
-awD
-awD
-awD
-bLv
-cou
-bzO
+aQU
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+aQU
+bMR
 bOX
 bQv
 aeU
@@ -112382,19 +112267,19 @@ cpX
 amA
 blF
 aEw
-bxq
-crV
-cuD
-awD
 agp
-bHg
-bHg
-cIy
-bHg
-bMq
-aSL
-bLP
-bJW
+aQU
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+aQU
 bJX
 bMS
 bQv
@@ -112640,18 +112525,18 @@ biS
 cnL
 bqy
 byB
-cuu
-cuI
-cnJ
-ahV
-bIR
-bxQ
-bLi
-bLq
-bMt
-atk
-bLT
-bMh
+aQU
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+aQU
 cLS
 bOY
 aer
@@ -112898,16 +112783,16 @@ cnL
 amA
 bqz
 awD
-aSL
-awD
-aQU
-bLr
-aQU
-aQU
-bLr
-aQU
-awD
-aSL
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
+bJv
 awD
 bMu
 aer
