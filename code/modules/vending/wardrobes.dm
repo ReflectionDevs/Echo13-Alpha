@@ -351,6 +351,10 @@
 					/obj/item/clothing/under/rank/civilian/lawyer/blue = 1,
 					/obj/item/clothing/under/rank/civilian/lawyer/red = 1,
 					/obj/item/clothing/under/rank/civilian/lawyer/black = 1,
+					/obj/item/clothing/suit/aristo_orange = 1,
+				   	/obj/item/clothing/suit/aristo_red = 1,
+				   	/obj/item/clothing/suit/aristo_brown = 1,
+				   	/obj/item/clothing/suit/aristo_blue = 1,
 					/obj/item/clothing/shoes/laceup = 2,
 					/obj/item/clothing/neck/tie/red = 6,
 					/obj/item/clothing/neck/tie/black = 6,
@@ -379,6 +383,7 @@
 					/obj/item/clothing/suit/chaplainsuit/holidaypriest = 1,
 					/obj/item/storage/fancy/candle_box = 2,
 					/obj/item/clothing/head/kippah = 3,
+					/obj/item/clothing/suit/hooded/hastur = 1,
 					/obj/item/clothing/suit/chaplainsuit/whiterobe = 1,
 					/obj/item/clothing/head/taqiyahwhite = 1,
 					/obj/item/clothing/head/taqiyahred = 3,
@@ -461,13 +466,11 @@
 	name = "\improper DetDrobe"
 	desc = "A machine for all your detective needs, as long as you need clothes."
 	icon_state = "detdrobe"
-	icon_deny = "det-deny"
-	product_ads = "Apply your brilliant deductive methods in style!;Just one more question: Are you ready to look swag?; Upgrade your LA Noir threads today!;Evidence bags? Cigs? Matches? We got it all!;Get your fix of cheap cigs and burnt coffee!;Stogies here to complete that classic noir look!;Stylish apparel here! Crack your case in style!;Fedoras for her tipping pleasure.;Why not have a donut?"
+	product_ads = "Apply your brilliant deductive methods in style!"
 	vend_reply = "Thank you for using the DetDrobe!"
 	products = list(/obj/item/clothing/under/rank/security/detective = 2,
 					/obj/item/clothing/shoes/sneakers/brown = 2,
 					/obj/item/clothing/suit/det_suit = 2,
-					/obj/item/clothing/suit/det_suit/det = 1,
 					/obj/item/clothing/head/fedora/det_hat = 2,
 					/obj/item/clothing/under/rank/security/detective/grey = 2,
 					/obj/item/clothing/accessory/waistcoat = 2,
@@ -479,9 +482,7 @@
 					/obj/item/clothing/gloves/color/latex = 2,
 					/obj/item/reagent_containers/food/drinks/flask/det = 2,
 					/obj/item/storage/fancy/cigarettes = 5)
-	premium = list(/obj/item/clothing/head/flatcap = 1,
-					/obj/item/detective_scanner = 1,
-					/obj/item/twohanded/binoculars = 1)
+	premium = list(/obj/item/clothing/head/flatcap = 1)
 	refill_canister = /obj/item/vending_refill/wardrobe/det_wardrobe
 	extra_price = 350
 	payment_department = ACCOUNT_SEC

@@ -64,7 +64,7 @@
 		if(!length(possible))
 			to_chat(user,"<span class='warning'>Despite your best efforts, there are no scents to be found on [sniffed]...</span>")
 			return
-		tracking_target = tgui_input_list(user, "Choose a scent to remember.", "Scent Tracking", sortNames(possible))
+		tracking_target = input(user, "Choose a scent to remember.", "Scent Tracking") as null|anything in sortNames(possible)
 		if(!tracking_target)
 			if(!old_target)
 				to_chat(user,"<span class='warning'>You decide against remembering any scents. Instead, you notice your own nose in your peripheral vision. This goes on to remind you of that one time you started breathing manually and couldn't stop. What an awful day that was.</span>")
@@ -89,10 +89,10 @@
 	if(tracking_target == user)
 		to_chat(user,"<span class='warning'>You smell out the trail to yourself. Yep, it's you.</span>")
 		return
-	if(usr.z < tracking_target.z)
+	if(usr.get_virtual_z_level() < tracking_target.get_virtual_z_level())
 		to_chat(user,"<span class='warning'>The trail leads... way up above you? Huh. They must be really, really far away.</span>")
 		return
-	else if(usr.z > tracking_target.z)
+	else if(usr.get_virtual_z_level() > tracking_target.get_virtual_z_level())
 		to_chat(user,"<span class='warning'>The trail leads... way down below you? Huh. They must be really, really far away.</span>")
 		return
 	var/direction_text = "[dir2text(get_dir(usr, tracking_target))]"

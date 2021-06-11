@@ -61,12 +61,6 @@
 	. = ..()
 	allowed = GLOB.detective_vest_allowed
 
-/obj/item/clothing/suit/det_suit/det
-	name = "DET jacket"
-	desc = "A smart blue jacket, identifying the wearer as a forensics expert."
-	icon_state = "det"
-	item_state = "det"
-
 /obj/item/clothing/suit/det_suit/grey
 	name = "noir trenchcoat"
 	desc = "A hard-boiled private investigator's grey trenchcoat."

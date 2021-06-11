@@ -24,6 +24,7 @@
 	mind_traits = list(TRAIT_LAW_ENFORCEMENT_METABOLISM)
 
 	display_order = JOB_DISPLAY_ORDER_DETECTIVE
+	departments = DEPARTMENT_SECURITY
 
 /datum/outfit/job/detective
 	name = "Detective"
@@ -32,10 +33,12 @@
 	id = /obj/item/card/id/job/detective
 	belt = /obj/item/pda/detective
 	ears = /obj/item/radio/headset/headset_sec/alt
-	uniform = /obj/item/clothing/under/rank/security/detective/grey
-	shoes = /obj/item/clothing/shoes/laceup
-	suit = /obj/item/clothing/suit/det_suit/det
+	uniform = /obj/item/clothing/under/rank/security/detective
+	neck = /obj/item/clothing/neck/tie/detective
+	shoes = /obj/item/clothing/shoes/sneakers/brown
+	suit = /obj/item/clothing/suit/det_suit
 	gloves = /obj/item/clothing/gloves/color/black
+	head = /obj/item/clothing/head/fedora/det_hat
 	l_pocket = /obj/item/toy/crayon/white
 	r_pocket = /obj/item/lighter
 	backpack_contents = list(/obj/item/storage/box/evidence=1,\

@@ -21,7 +21,6 @@ SUBSYSTEM_DEF(persistence)
 	LoadTrophies()
 	LoadRecentModes()
 	LoadPhotoPersistence()
-	LoadPanicBunker() //SKYRAT EDIT ADDITION - PANICBUNKER
 	if(CONFIG_GET(flag/use_antag_rep))
 		LoadAntagReputation()
 	return ..()
@@ -144,7 +143,6 @@ SUBSYSTEM_DEF(persistence)
 	CollectChiselMessages()
 	CollectTrophies()
 	CollectRoundtype()
-	SavePanicBunker()//SKYRAT EDIT ADDITION - PANICBUNKER
 	SavePhotoPersistence()						//THIS IS PERSISTENCE, NOT THE LOGGING PORTION.
 	if(CONFIG_GET(flag/use_antag_rep))
 		CollectAntagReputation()

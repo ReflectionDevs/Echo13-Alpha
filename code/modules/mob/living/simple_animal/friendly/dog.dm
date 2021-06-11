@@ -36,6 +36,7 @@
 	held_state = "corgi"
 	var/obj/item/inventory_head
 	var/obj/item/inventory_back
+	worn_slot_flags = ITEM_SLOT_HEAD
 	var/shaved = FALSE
 	var/nofur = FALSE 		//Corgis that have risen past the material plane of existence.
 
@@ -104,6 +105,7 @@
 	icon_dead = "corgigrey_dead"
 	animal_species = /mob/living/simple_animal/pet/dog/corgi/exoticcorgi
 	nofur = TRUE
+	worn_slot_flags = null
 
 /mob/living/simple_animal/pet/dog/Initialize()
 	. = ..()
@@ -145,16 +147,16 @@
 	if(def_zone)
 		if(def_zone == BODY_ZONE_HEAD)
 			if(inventory_head)
-				armorval = inventory_head.armor.getRating(type)
+				armorval = inventory_head.get_armor_rating(type, src)
 		else
 			if(inventory_back)
-				armorval = inventory_back.armor.getRating(type)
+				armorval = inventory_back.get_armor_rating(type, src)
 		return armorval
 	else
 		if(inventory_head)
-			armorval += inventory_head.armor.getRating(type)
+			armorval += inventory_head.get_armor_rating(type, src)
 		if(inventory_back)
-			armorval += inventory_back.armor.getRating(type)
+			armorval += inventory_back.get_armor_rating(type, src)
 	return armorval*0.5
 
 /mob/living/simple_animal/pet/dog/corgi/attackby(obj/item/O, mob/user, params)
@@ -378,11 +380,7 @@
 	if(age == 0)
 		var/turf/target = get_turf(loc)
 		if(target)
-			var/mob/living/simple_animal/pet/dog/corgi/puppy/P = new /mob/living/simple_animal/pet/dog/corgi/puppy(target)
-			P.name = "Ian"
-			P.real_name = "Ian"
-			P.gender = MALE
-			P.desc = "It's the HoP's beloved corgi puppy."
+			new /mob/living/simple_animal/pet/dog/corgi/puppy/Ian(target)
 			Write_Memory(FALSE)
 			return INITIALIZE_HINT_QDEL
 	else if(age == record_age)
@@ -520,6 +518,7 @@
 	nofur = TRUE
 	unique_pet = TRUE
 	held_state = "narsian"
+	worn_slot_flags = null
 
 /mob/living/simple_animal/pet/dog/corgi/narsie/Life()
 	..()
@@ -611,6 +610,12 @@
 		to_chat(usr, "<span class='warning'>You can't fit this on [src]!</span>")
 		return
 	..()
+
+/mob/living/simple_animal/pet/dog/corgi/puppy/Ian
+	name = "Ian"
+	real_name = "Ian"
+	gender = MALE
+	desc = "It's the HoP's beloved corgi puppy."
 
 
 /mob/living/simple_animal/pet/dog/corgi/puppy/void		//Tribute to the corgis born in nullspace
