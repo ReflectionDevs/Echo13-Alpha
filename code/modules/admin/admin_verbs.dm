@@ -18,7 +18,9 @@ GLOBAL_PROTECT(admin_verbs_default)
 	/client/proc/cmd_admin_pm_context,	/*right-click adminPM interface*/
 	/client/proc/cmd_admin_pm_panel,		/*admin-pm list*/
 	/client/proc/stop_sounds,
-	/client/proc/mark_datum_mapview
+	/client/proc/mark_datum_mapview,
+	/client/proc/revokebunkerbypass, //SKYRAT EDIT ADDITION - PANICBUNKER
+	/client/proc/addbunkerbypass //SKYRAT EDIT ADDITION - PANICBUNKER
 	)
 GLOBAL_LIST_INIT(admin_verbs_admin, world.AVerbsAdmin())
 GLOBAL_PROTECT(admin_verbs_admin)
