@@ -23,7 +23,23 @@
 	..()
 	START_PROCESSING(SSobj, src)
 
+<<<<<<< HEAD
 /obj/item/twohanded/singularityhammer/Destroy()
+=======
+/obj/item/singularityhammer/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_multiplier=4, icon_wielded="singularity_hammer1")
+
+/obj/item/singularityhammer/Destroy()
+	STOP_PROCESSING(SSobj, src)
+	return ..()
+
+/obj/item/singularityhammer/update_icon_state()
+	icon_state = "mjollnir0"
+	..()
+
+/obj/item/singularityhammer/Destroy()
+>>>>>>> 2e4d83c84d (Fixed icon states (#4574))
 	STOP_PROCESSING(SSobj, src)
 	return ..()
 
@@ -110,6 +126,12 @@
 	if(isliving(hit_atom))
 		shock(hit_atom)
 
+<<<<<<< HEAD
 /obj/item/twohanded/mjollnir/update_icon()  //Currently only here to fuck with the on-mob icons.
 	icon_state = "mjollnir[wielded]"
 	return
+=======
+/obj/item/mjollnir/update_icon()  //Currently only here to fuck with the on-mob icons.
+	icon_state = "mjollnir0"
+	..()
+>>>>>>> 2e4d83c84d (Fixed icon states (#4574))
