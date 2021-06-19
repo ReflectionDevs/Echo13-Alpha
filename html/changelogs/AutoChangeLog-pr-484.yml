@@ -1,4 +1,0 @@
-author: ReflectionBot
-delete-after: true
-changes:
-  - bugfix: Fixed balloon chat pref not saving
