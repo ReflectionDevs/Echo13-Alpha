@@ -171,11 +171,31 @@
 	var/dat = ""
 	dat += "<a href='byond://?src=[REF(src)];refresh=1'>Refresh</a>"
 
+<<<<<<< HEAD
 	if(scanner && HasEfficientPod() && scanner.scan_level >= AUTOCLONING_MINIMAL_LEVEL)
 		if(!autoprocess)
 			dat += "<a href='byond://?src=[REF(src)];task=autoprocess'>Autoprocess</a>"
 		else
 			dat += "<a href='byond://?src=[REF(src)];task=stopautoprocess'>Stop autoprocess</a>"
+=======
+/obj/machinery/computer/cloning/proc/Scan(mob/user, body_only = FALSE)
+	if(!scanner.is_operational() || !scanner.occupant)
+		return
+	scantemp = "[scantemp_name] => Scanning..."
+	loading = TRUE
+	playsound(src, 'sound/machines/terminal_prompt.ogg', 50, 0)
+	say("Initiating scan...")
+	var/prev_locked = scanner.locked
+	scanner.locked = TRUE
+	addtimer(CALLBACK(src, .proc/finish_scan, scanner.occupant, user, prev_locked, body_only), 2 SECONDS)
+	. = TRUE
+
+/obj/machinery/computer/cloning/proc/Toggle_autoprocess(mob/user)
+	autoprocess = !autoprocess
+	if(autoprocess)
+		START_PROCESSING(SSmachines, src)
+		playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, 0)
+>>>>>>> 9a10d7ddc4 (make can_scan checks work again (#4614))
 	else
 		dat += "<span class='linkOff'>Autoprocess</span>"
 	dat += "<h3>Cloning Pod Status</h3>"
@@ -321,8 +341,19 @@
 	if(..())
 		return
 
+<<<<<<< HEAD
 	if(loading)
 		return
+=======
+/obj/machinery/computer/cloning/proc/finish_scan(mob/living/L, mob/user, prev_locked, body_only)
+	if(!scanner || !L)
+		return
+	src.add_fingerprint(usr)
+	if(use_records)
+		scan_occupant(L, user, body_only)
+	else
+		clone_occupant(L, user)
+>>>>>>> 9a10d7ddc4 (make can_scan checks work again (#4614))
 
 	if(href_list["task"])
 		switch(href_list["task"])
@@ -363,6 +394,7 @@
 			updateUsrDialog()
 			playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, 0)
 
+<<<<<<< HEAD
 
 		//No locking an open scanner.
 	else if ((href_list["lock"]) && !isnull(scanner) && scanner.is_operational())
@@ -521,8 +553,86 @@
 	add_fingerprint(usr)
 	updateUsrDialog()
 	return
+=======
+//Used by consoles without records
+/obj/machinery/computer/cloning/proc/clone_occupant(occupant, mob/user)
+	var/mob/living/mob_occupant = get_mob_or_brainmob(occupant)
+	var/datum/dna/dna
+	if(ishuman(mob_occupant))
+		var/mob/living/carbon/C = mob_occupant
+		dna = C.has_dna()
+	if(isbrain(mob_occupant))
+		var/mob/living/brain/B = mob_occupant
+		dna = B.stored_dna
+	if(!can_scan(dna, mob_occupant, TRUE))
+		return
+	var/clone_species
+	if(dna.species)
+		clone_species = dna.species
+	else
+		var/datum/species/rando_race = pick(GLOB.roundstart_races)
+		clone_species = rando_race.type
+	var/obj/machinery/clonepod/pod = GetAvailablePod()
+	//Can't clone without someone to clone.  Or a pod.  Or if the pod is busy. Or full of gibs.
+	if(!LAZYLEN(pods))
+		temp = "No Clonepods detected."
+		playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
+	else if(!pod)
+		temp = "No Clonepods available."
+		playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
+	else if(pod.occupant)
+		temp = "Cloning cycle already in progress."
+		playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
+	else
+		pod.growclone(mob_occupant.real_name, dna.uni_identity, dna.mutation_index, null, null, clone_species, dna.blood_type, mob_occupant.faction)
+		temp = "[mob_occupant.real_name] => Cloning data sent to pod."
+		playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50, 0)
+		log_cloning("[user ? key_name(user) : "Unknown"] cloned [key_name(mob_occupant)] with [src] at [AREACOORD(src)].")
 
-/obj/machinery/computer/cloning/proc/scan_occupant(occupant, mob/M, body_only)
+/obj/machinery/computer/cloning/proc/can_scan(datum/dna/dna, mob/living/mob_occupant, experimental = FALSE, datum/bank_account/account, body_only)
+	if(!istype(dna))
+		scantemp = "Unable to locate valid genetic data."
+		playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
+		return FALSE
+	if(NO_DNA_COPY in dna.species.species_traits)
+		scantemp = "The DNA of this lifeform could not be read due to an unknown error!"
+		playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
+		return FALSE
+	if((HAS_TRAIT(mob_occupant, TRAIT_HUSK)) && (src.scanner.scan_level < 2))
+		scantemp = "Subject's body is too damaged to scan properly."
+		playsound(src, 'sound/machines/terminal_alert.ogg', 50, 0)
+		return FALSE
+	if(HAS_TRAIT(mob_occupant, TRAIT_BADDNA))
+		scantemp = "Subject's DNA is damaged beyond any hope of recovery."
+		playsound(src, 'sound/machines/terminal_alert.ogg', 50, 0)
+		return FALSE
+	if(!experimental)
+		if(!body_only && (mob_occupant.suiciding || mob_occupant.hellbound))
+			scantemp = "Subject's brain is not responding to scanning stimuli."
+			playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
+			return FALSE
+		if(!body_only && isnull(mob_occupant.mind))
+			scantemp = "Mental interface failure."
+			playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
+			return FALSE
+		if(!body_only && SSeconomy.full_ancap)
+			if(!account)
+				scantemp = "Subject is either missing an ID card with a bank account on it, or does not have an account to begin with. Please ensure the ID card is on the body before attempting to scan."
+				playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
+				return FALSE
+	else
+		if(mob_occupant.suiciding)
+			scantemp = "Subject's brain is not responding to scanning stimuli."
+			playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
+			return FALSE
+		if(!mob_occupant.mind)
+			scantemp = "Mental interface failure."
+			playsound(src, 'sound/machines/terminal_prompt_deny.ogg', 50, 0)
+			return FALSE
+	return TRUE
+>>>>>>> 9a10d7ddc4 (make can_scan checks work again (#4614))
+
+/obj/machinery/computer/cloning/proc/scan_occupant(occupant, mob/user, body_only)
 	var/mob/living/mob_occupant = get_mob_or_brainmob(occupant)
 	var/datum/dna/dna
 	var/datum/bank_account/has_bank_account
@@ -626,5 +736,5 @@
 	else
 		scantemp = "Subject successfully scanned."
 	records += R
-	log_cloning("[M ? key_name(M) : "Autoprocess"] added the [body_only ? "body-only " : ""]record of [key_name(mob_occupant)] to [src] at [AREACOORD(src)].")
+	log_cloning("[user ? key_name(user) : "Autoprocess"] added the [body_only ? "body-only " : ""]record of [key_name(mob_occupant)] to [src] at [AREACOORD(src)].")
 	playsound(src, 'sound/machines/terminal_prompt_confirm.ogg', 50)
