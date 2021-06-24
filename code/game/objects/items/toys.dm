@@ -368,13 +368,21 @@
 	throwforce = 0
 	throw_speed = 3
 	throw_range = 5
+<<<<<<< HEAD
 	force_unwielded = 0
 	force_wielded = 0
+=======
+	twohand_force = 0
+>>>>>>> a9d9da9126 (toy sword memes (#4637))
 	attack_verb = list("attacked", "struck", "hit")
 	block_upgrade_walk = 1
 	block_power = -100
 
+<<<<<<< HEAD
 /obj/item/twohanded/dualsaber/toy/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
+=======
+/obj/item/dualsaber/toy/hit_reaction(mob/living/carbon/human/owner, atom/movable/hitby, attack_text = "the attack", final_block_chance = 0, damage = 0, attack_type = MELEE_ATTACK)
+>>>>>>> a9d9da9126 (toy sword memes (#4637))
 	return 0
 
 /obj/item/twohanded/dualsaber/toy/IsReflect()//Stops Toy Dualsabers from reflecting energy projectiles
