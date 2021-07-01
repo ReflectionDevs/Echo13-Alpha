@@ -638,6 +638,14 @@
 /obj/item/twohanded/cult_spear/Initialize()
 	. = ..()
 	AddComponent(/datum/component/butchering, 100, 90)
+<<<<<<< HEAD
+=======
+	AddComponent(/datum/component/two_handed, force_unwielded=17, force_wielded=24, icon_wielded="bloodspear1")
+
+/obj/item/cult_spear/update_icon()
+	icon_state = "bloodspear0"
+	..()
+>>>>>>> 2e4d83c84d (Fixed icon states (#4574))
 
 /obj/item/twohanded/cult_spear/Destroy()
 	if(spear_act)
