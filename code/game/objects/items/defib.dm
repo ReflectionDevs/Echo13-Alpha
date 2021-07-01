@@ -323,8 +323,15 @@
 	if((req_defib && defib) && loc != defib)
 		defib.fire_act(exposed_temperature, exposed_volume)
 
+<<<<<<< HEAD
 /obj/item/twohanded/shockpaddles/proc/check_range()
 	if(!req_defib)
+=======
+/obj/item/shockpaddles/proc/check_range()
+	SIGNAL_HANDLER
+
+	if(!req_defib || !defib)
+>>>>>>> 45b20bdfb7 (Adds signal_handler to all procs that handle signals (#4623))
 		return
 	if(!in_range(src,defib))
 		var/mob/living/L = loc
