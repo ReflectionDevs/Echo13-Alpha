@@ -347,6 +347,7 @@
 	cooldown = FALSE
 	update_icon()
 
+<<<<<<< HEAD
 /obj/item/twohanded/shockpaddles/New(mainunit)
 	..()
 	if(check_defib_exists(mainunit, src) && req_defib)
@@ -354,6 +355,18 @@
 		forceMove(defib)
 		busy = FALSE
 		update_icon()
+=======
+/obj/item/shockpaddles/Initialize()
+	. = ..()
+	ADD_TRAIT(src, TRAIT_NO_STORAGE_INSERT, GENERIC_ITEM_TRAIT) //stops shockpaddles from being inserted in BoH
+	if(!req_defib)
+		return //If it doesn't need a defib, just say it exists
+	if (!loc || !istype(loc, /obj/item/defibrillator)) //To avoid weird issues from admin spawns
+		return INITIALIZE_HINT_QDEL
+	defib = loc
+	busy = FALSE
+	update_icon()
+>>>>>>> 1550dbbb97 (Fixes shock paddles being insertable in BoH (#48643) (#4603))
 
 /obj/item/twohanded/shockpaddles/update_icon()
 	icon_state = "defibpaddles[wielded]"
@@ -391,6 +404,7 @@
 	forceMove(defib)
 	defib.update_icon()
 
+<<<<<<< HEAD
 /obj/item/twohanded/shockpaddles/proc/check_defib_exists(mainunit, mob/living/carbon/M, obj/O)
 	if(!req_defib)
 		return TRUE //If it doesn't need a defib, just say it exists
@@ -402,6 +416,9 @@
 
 /obj/item/twohanded/shockpaddles/attack(mob/M, mob/user)
 
+=======
+/obj/item/shockpaddles/attack(mob/M, mob/user)
+>>>>>>> 1550dbbb97 (Fixes shock paddles being insertable in BoH (#48643) (#4603))
 	if(busy)
 		return
 	if(req_defib && !defib.powered)
