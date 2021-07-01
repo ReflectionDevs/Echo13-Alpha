@@ -107,6 +107,11 @@ GLOBAL_LIST_INIT(job_colors_pastel, list(
   * Calls qdel on the chatmessage when its parent is deleted, used to register qdel signal
   */
 /datum/chatmessage/proc/on_parent_qdel()
+<<<<<<< HEAD
+=======
+	SIGNAL_HANDLER
+
+>>>>>>> 45b20bdfb7 (Adds signal_handler to all procs that handle signals (#4623))
 	qdel(src)
 
 /**

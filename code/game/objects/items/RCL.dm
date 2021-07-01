@@ -23,7 +23,32 @@
 	var/datum/radial_menu/persistent/wiring_gui_menu
 	var/mob/listeningTo
 
+<<<<<<< HEAD
 /obj/item/twohanded/rcl/attackby(obj/item/W, mob/user)
+=======
+/obj/item/rcl/Initialize()
+	. = ..()
+	RegisterSignal(src, COMSIG_TWOHANDED_WIELD, .proc/on_wield)
+	RegisterSignal(src, COMSIG_TWOHANDED_UNWIELD, .proc/on_unwield)
+
+/obj/item/rcl/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed)
+
+/// triggered on wield of two handed item
+/obj/item/rcl/proc/on_wield(obj/item/source, mob/user)
+	SIGNAL_HANDLER
+
+	active = TRUE
+
+/// triggered on unwield of two handed item
+/obj/item/rcl/proc/on_unwield(obj/item/source, mob/user)
+	SIGNAL_HANDLER
+
+	active = FALSE
+
+/obj/item/rcl/attackby(obj/item/W, mob/user)
+>>>>>>> 45b20bdfb7 (Adds signal_handler to all procs that handle signals (#4623))
 	if(istype(W, /obj/item/stack/cable_coil))
 		var/obj/item/stack/cable_coil/C = W
 
@@ -154,7 +179,13 @@
 	RegisterSignal(to_hook, COMSIG_MOVABLE_MOVED, .proc/trigger)
 	listeningTo = to_hook
 
+<<<<<<< HEAD
 /obj/item/twohanded/rcl/proc/trigger(mob/user)
+=======
+/obj/item/rcl/proc/trigger(mob/user)
+	SIGNAL_HANDLER
+
+>>>>>>> 45b20bdfb7 (Adds signal_handler to all procs that handle signals (#4623))
 	if(active)
 		layCable(user)
 	if(wiring_gui_menu) //update the wire options as you move
