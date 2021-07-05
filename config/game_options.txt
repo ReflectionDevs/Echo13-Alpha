@@ -123,8 +123,12 @@ PROBABILITY INTERNAL_AFFAIRS 3
 PROBABILITY TRAITORBRO 3
 PROBABILITY WIZARD 2
 PROBABILITY CLOWNOPS 2
+<<<<<<< HEAD
 >>>>>>> d898aa7889 (Attempts to bring Dynamic more up to date (#3797))
 PROBABILITY CLOCKCULT 1
+=======
+PROBABILITY CLOCKCULT 2
+>>>>>>> debaaab8bd (Clockwork fixes, gamemode map load refactor, eminence refactoring (#4612))
 PROBABILITY MONKEY 0
 PROBABILITY GANG 0
 PROBABILITY METEOR 0
@@ -659,4 +663,7 @@ BSMINER_RESEARCHABLE
 
 ## Do we want all the heads to get codes to spare safe, or just one highest in CoC?
 #SPARE_ENFORCE_COC
+<<<<<<< HEAD
 >>>>>>> f53db5eb08 (Moves spare to safe located in bridge, acting captain gets codes to it (#3838))
+=======
+>>>>>>> debaaab8bd (Clockwork fixes, gamemode map load refactor, eminence refactoring (#4612))

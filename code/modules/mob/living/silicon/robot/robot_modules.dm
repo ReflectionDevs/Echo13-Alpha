@@ -284,7 +284,11 @@
 		/obj/item/clock_module/abstraction_crystal,
 		/obj/item/clockwork/replica_fabricator,
 		/obj/item/stack/tile/brass/cyborg,
+<<<<<<< HEAD
 		/obj/item/twohanded/clockwork/brass_spear)
+=======
+		/obj/item/clockwork/weapon/brass_spear)
+>>>>>>> debaaab8bd (Clockwork fixes, gamemode map load refactor, eminence refactoring (#4612))
 	moduleselect_icon = "standard"
 	hat_offset = -3
 
@@ -398,7 +402,11 @@
 	emag_modules = list(/obj/item/gun/energy/laser/cyborg)
 	ratvar_modules = list(
 		/obj/item/clock_module/abscond,
+<<<<<<< HEAD
 		/obj/item/twohanded/clockwork/brass_spear,
+=======
+		/obj/item/clockwork/weapon/brass_spear,
+>>>>>>> debaaab8bd (Clockwork fixes, gamemode map load refactor, eminence refactoring (#4612))
 		/obj/item/clock_module/ocular_warden,
 		/obj/item/clock_module/vanguard)
 	cyborg_base_icon = "sec"
@@ -517,7 +525,11 @@
 	ratvar_modules = list(
 		/obj/item/clock_module/abscond,
 		/obj/item/clock_module/vanguard,
+<<<<<<< HEAD
 		/obj/item/twohanded/clockwork/brass_battlehammer)	//honk
+=======
+		/obj/item/clockwork/weapon/brass_battlehammer)	//honk
+>>>>>>> debaaab8bd (Clockwork fixes, gamemode map load refactor, eminence refactoring (#4612))
 	moduleselect_icon = "service"
 	cyborg_base_icon = "clown"
 	hat_offset = -2

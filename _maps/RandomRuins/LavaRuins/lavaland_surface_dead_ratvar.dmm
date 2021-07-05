@@ -123,7 +123,11 @@
 	},
 /area/lavaland/surface/outdoors/unexplored)
 "B" = (
+<<<<<<< HEAD
 /obj/item/twohanded/clockwork/brass_spear,
+=======
+/obj/item/clockwork/weapon/brass_spear,
+>>>>>>> debaaab8bd (Clockwork fixes, gamemode map load refactor, eminence refactoring (#4612))
 /turf/open/floor/clockwork{
 	initial_gas_mix = "LAVALAND_ATMOS"
 	},
