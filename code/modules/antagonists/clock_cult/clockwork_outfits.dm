@@ -20,18 +20,30 @@
 	name = "Servant of Ratvar - Armaments"
 
 	suit = /obj/item/clothing/suit/clockwork
+<<<<<<< HEAD
 	weapon = /obj/item/twohanded/clockwork/brass_spear
+=======
+	weapon = /obj/item/clockwork/weapon/brass_spear
+>>>>>>> debaaab8bd (Clockwork fixes, gamemode map load refactor, eminence refactoring (#4612))
 	head = /obj/item/clothing/head/helmet/clockcult
 	shoes = /obj/item/clothing/shoes/clockcult
 	gloves = /obj/item/clothing/gloves/clockcult
 
 /datum/outfit/clockcult/armaments/hammer
 	name = "Servant of Ratvar - Armaments (hammer)"
+<<<<<<< HEAD
 	weapon = /obj/item/twohanded/clockwork/brass_battlehammer
 
 /datum/outfit/clockcult/armaments/sword
 	name = "Servant of Ratvar - Armaments (sword)"
 	weapon = /obj/item/twohanded/clockwork/brass_sword
+=======
+	weapon = /obj/item/clockwork/weapon/brass_battlehammer
+
+/datum/outfit/clockcult/armaments/sword
+	name = "Servant of Ratvar - Armaments (sword)"
+	weapon = /obj/item/clockwork/weapon/brass_sword
+>>>>>>> debaaab8bd (Clockwork fixes, gamemode map load refactor, eminence refactoring (#4612))
 
 /datum/outfit/clockcult/armaments/bow
 	name = "Servant of Ratvar - Armaments (sword)"
