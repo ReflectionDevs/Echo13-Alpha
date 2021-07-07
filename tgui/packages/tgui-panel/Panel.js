@@ -52,9 +52,13 @@ export const Panel = (props, context) => {
     <Pane theme={settings.theme}>
       <Flex
         height={(98-number) + '%'}
+<<<<<<< HEAD
         direction="column"
         grow={0}
         shrink={0}>
+=======
+        vertical>
+>>>>>>> 028d52a5d2 (Fix my TGUI mistakes & tweak uplink atomized edition (#4716))
         <StatTabs
           direction="column" />
       </Flex>
@@ -83,6 +87,7 @@ export const Panel = (props, context) => {
           </Box>
         )}
       </DraggableControl>
+<<<<<<< HEAD
       <Flex
         mt={1}
         direction="column"
@@ -91,12 +96,24 @@ export const Panel = (props, context) => {
           <Section fitted>
             <Flex mx={0.5} align="center">
               <Flex.Item mx={0.5} grow={1} overflowX="auto">
+=======
+      <Stack mt={1} vertical height={(number-1) + '%'}>
+        <Stack.Item>
+          <Section>
+            <Stack my={-1.25} align="center">
+              <Stack.Item grow overflowX="auto">
+>>>>>>> 028d52a5d2 (Fix my TGUI mistakes & tweak uplink atomized edition (#4716))
                 <ChatTabs />
               </Flex.Item>
               <Flex.Item mx={0.5}>
                 <PingIndicator />
+<<<<<<< HEAD
               </Flex.Item>
               <Flex.Item mx={0.5}>
+=======
+              </Stack.Item>
+              <Stack.Item mx={0.5}>
+>>>>>>> 028d52a5d2 (Fix my TGUI mistakes & tweak uplink atomized edition (#4716))
                 <Button
                   color="grey"
                   selected={audio.visible}
@@ -130,7 +147,11 @@ export const Panel = (props, context) => {
             <SettingsPanel />
           </Flex.Item>
         )}
+<<<<<<< HEAD
         <Flex.Item mt={1} grow={1}>
+=======
+        <Stack.Item mt={1} grow>
+>>>>>>> 028d52a5d2 (Fix my TGUI mistakes & tweak uplink atomized edition (#4716))
           <Section fill fitted position="relative">
             <Pane.Content scrollable>
               <ChatPanel lineHeight={settings.lineHeight} />
