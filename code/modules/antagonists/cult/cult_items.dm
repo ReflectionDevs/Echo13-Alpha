@@ -117,7 +117,16 @@
 	linked_action = new(src)
 	AddComponent(/datum/component/butchering, 50, 80)
 
+<<<<<<< HEAD
 /obj/item/twohanded/required/cult_bastard/examine(mob/user)
+=======
+/obj/item/cult_bastard/Destroy()
+	QDEL_NULL(jaunt)
+	QDEL_NULL(linked_action)
+	return ..()
+
+/obj/item/cult_bastard/examine(mob/user)
+>>>>>>> e260143132 (Port harddel fixes, as well as "Fixes stasis bed runtimes" (#4598))
 	. = ..()
 	if(contents.len)
 		. += "<b>There are [contents.len] souls trapped within the sword's core.</b>"
@@ -194,7 +203,7 @@
 	phaseout = /obj/effect/temp_visual/dir_setting/cult/phase/out
 
 /datum/action/innate/dash/cult/IsAvailable()
-	if(iscultist(holder) && current_charges)
+	if(iscultist(owner) && current_charges)
 		return TRUE
 	else
 		return FALSE
