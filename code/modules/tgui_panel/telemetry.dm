@@ -119,7 +119,18 @@
 			if(length(all_ckeys) == len)
 				LAZYADD(telemetry_notices, "<span class='bad'><b>EVERY ENTRY IN HISTORY HAS A DIFFERENT CKEY!</b></span>")
 			else
+<<<<<<< HEAD
 				LAZYADD(telemetry_notices, "<span class='bad'>User has multiple CKEYs in history!</span>")
+=======
+				LAZYSET(telemetry_notices, TGUI_TELEM_CKEY_WARNING, "<span class='bad'>KEY_COUNT|User has multiple CKEYs in history!</span>")
+	if(telemetry_notices?[TGUI_TELEM_CKEY_WARNING]) //Has a CKEY warning
+		var/text_list_ckeys = ""
+		var/first = 1
+		for(var/entry in all_ckeys)
+			text_list_ckeys += "[first ? null : ","][entry]"
+			first = 0
+		LAZYSET(telemetry_notices, "TGUI_CKEY_LIST", "ALL_CKEYS|[text_list_ckeys]")
+>>>>>>> 0ffc3fed9e (fix runtime (#4763))
 	switch(length(all_ips))
 		if(2 to INFINITY)
 			if(length(all_ips) == len)
