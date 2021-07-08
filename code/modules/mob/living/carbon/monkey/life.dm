@@ -1,7 +1,6 @@
-
-
 /mob/living/carbon/monkey
 
+<<<<<<< HEAD
 
 /mob/living/carbon/monkey/Life()
 	set invisibility = 0
@@ -28,6 +27,8 @@
 			else
 				walk_to(src,0)
 
+=======
+>>>>>>> 23504ea087 ([PORT] Datumized AI + implemented for monkeys from TG (#4670))
 /mob/living/carbon/monkey/handle_mutations_and_radiation()
 	if(radiation)
 		if(radiation > RAD_MOB_KNOCKDOWN && prob(RAD_MOB_KNOCKDOWN_PROB))
