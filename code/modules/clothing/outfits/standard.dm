@@ -390,6 +390,7 @@
 	r_hand= /obj/item/tank/internals/plasmaman/belt/full
 	mask = /obj/item/clothing/mask/breath
 
+<<<<<<< HEAD
 /datum/outfit/death_commando
 	name = "Death Commando"
 
@@ -460,6 +461,8 @@
 		/obj/item/gun/grenadelauncher/security=1,\
 		/obj/item/gun/ballistic/automatic/ar=1)
 
+=======
+>>>>>>> 21f3ec1cd2 (Reponse Team Tweaks (#4749))
 /datum/outfit/chrono_agent
 	name = "Timeline Eradication Agent"
 	uniform = /obj/item/clothing/under/color/white
