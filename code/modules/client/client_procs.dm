@@ -1104,3 +1104,18 @@ GLOBAL_LIST_INIT(blacklisted_builds, list(
 			qdel(src)
 			return
 
+<<<<<<< HEAD
+=======
+/client/proc/open_filter_editor(atom/in_atom)
+	if(holder)
+		holder.filteriffic = new /datum/filter_editor(in_atom)
+		holder.filteriffic.ui_interact(mob)
+
+/client/proc/update_ambience_pref()
+	if(prefs.toggles & SOUND_AMBIENCE)
+		if(SSambience.ambience_listening_clients[src] > world.time)
+			return // If already properly set we don't want to reset the timer.
+		SSambience.ambience_listening_clients[src] = world.time + 10 SECONDS //Just wait 10 seconds before the next one aight mate? cheers.
+	else
+		SSambience.ambience_listening_clients -= src
+>>>>>>> 203156d3e2 (ports tg's filter debug menu & minor filter refactor (#4434))
